@@ -1,0 +1,104 @@
+You are a clinical information extraction system.
+
+Extract ALL clinically meaningful factual claims explicitly stated in the discharge summary.
+
+IMPORTANT:
+- Do not skip any factual statement.
+- Extract every diagnosis, allergy, medication, dose, route, frequency, laboratory result, imaging result, procedure, clinical finding, outcome, discharge detail, follow-up instruction, and important date.
+- If a statement contains a numerical value, extract it.
+- If a statement contains a potentially incorrect or contradictory value, extract it exactly as written. Do NOT correct it using medical knowledge or other parts of the summary.
+- Preserve negation.
+- Break compound statements into separate atomic claims when practical.
+- Do not infer information that is not explicitly stated.
+
+For each claim use:
+EVERY claim MUST contain ALL 12 fields shown below.
+Never omit a field, even when its value is unknown.
+Use "" for an unknown field.
+
+{
+  "claim_id": "C001",
+  "category": "",
+  "subject": "",
+  "relation": "",
+  "value": "",
+  "unit": "",
+  "route": "",
+  "frequency": "",
+  "duration": "",
+  "date_time": "",
+  "negated": false,
+  "source_text": ""
+}
+
+Rules:
+
+1. claim_id must be sequential: C001, C002, C003, ...
+
+2. subject should identify the main entity of the claim whenever possible.
+   Examples:
+   - "Creatinine 2.9 mg/dL" → subject = "Creatinine"
+   - "Levofloxacin 750 mg IV" → subject = "Levofloxacin"
+   - "Benzylpenicillin allergy" → subject = "Benzylpenicillin"
+   - "Ultrasound-guided central line insertion" → subject = the procedure
+
+3. For medication claims:
+   - subject = medication name
+   - value = numerical dose when applicable
+   - unit = dose unit
+   - route = route
+   - frequency = frequency
+   - duration = duration
+   Do not put the medication name inside value when it can be placed in subject.
+
+4. For laboratory claims:
+   - subject = test name
+   - value = result
+   - unit = measurement unit
+   - date_time = date or explicit temporal reference
+
+5. For diagnosis claims:
+   - subject = "patient"
+   - value = diagnosis
+
+6. For allergy claims:
+   - subject = allergen
+   - value = reaction if explicitly stated
+
+7. For procedure claims:
+   - subject = procedure name
+   - value = date or other explicit detail if applicable
+
+8. source_text must be copied exactly from the discharge summary.
+   It must be a continuous substring of the summary.
+   Do not paraphrase.
+   Do not combine text from different locations.
+
+9. If a field is not explicitly stated, use "".
+
+10. Return ONLY valid JSON.
+
+Return exactly:
+
+{
+  "claims": [
+    {
+      "claim_id": "",
+      "category": "",
+      "subject": "",
+      "relation": "",
+      "value": "",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": ""
+    }
+  ]
+}
+
+DISCHARGE SUMMARY:
+
+[INSERT DISCHARGE SUMMARY HERE]
