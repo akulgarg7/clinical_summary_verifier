@@ -1,0 +1,109 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Not provided]  
+Age: 71 years | Sex: Female  
+Height: 155 cm | Weight: 74 kg | Blood Group: B negative  
+Case ID: SYN-DS-0006  
+
+**Admission Details**  
+Admission Date: 2025-11-03 at 06:45  
+Admission Type: Elective  
+Primary Specialty: Orthopaedics  
+
+**Reason for Admission**  
+Elective right total knee arthroplasty for chronic right knee pain limiting walking (symptom duration 4 years, worsening over past 12 months).  
+
+**Relevant Medical History**  
+- Primary osteoarthritis of both knees (right worse than left)  
+- Essential hypertension (diagnosed 2013)  
+- Previous surgery: Left carpal tunnel release (2017)  
+- Family history: Mother with osteoarthritis  
+- Social history: Retired tailor, lives with husband in ground-floor flat; never smoker, no alcohol  
+
+**Allergies**  
+- Morphine: Generalised itching (pruritus), mild severity  
+
+**Medications on Admission**  
+- Losartan 50 mg oral once daily (hypertension)  
+- Paracetamol 1 g oral every 8 hours as needed (knee pain)  
+- Meloxicam 7.5 mg oral once daily (knee pain) – stopped 2025-10-27 per pre-operative instructions  
+
+**Important Examination Findings (Pre-operative)**  
+- Vital signs: Temp 36.5°C, HR 74 bpm, BP 138/82 mmHg, RR 16/min, SpO₂ 98% RA  
+- Right knee: Varus deformity ~8°, fixed flexion deformity 10° with flexion to 95°, medial joint line tenderness and crepitus, no effusion/erythema/warmth, no skin breaks  
+- Neurovascular: Dorsalis pedis and posterior tibial pulses palpable bilaterally; normal distal sensation and motor function  
+
+**Important Investigations**  
+*Pre-operative (2025-10-15):*  
+- Haemoglobin 12.8 g/dL, Platelets 241 ×10⁹/L, Creatinine 0.8 mg/dL, eGFR 72 mL/min/1.73m², Na⁺ 139 mmol/L, K⁺ 4.2 mmol/L, INR 1.0, Fasting glucose 96 mg/dL – all normal  
+- Nasal MRSA screen negative  
+- ECG: Sinus rhythm 72 bpm, normal intervals  
+- Right knee X-ray (standing AP/lateral): Severe medial joint space loss, marginal osteophytes, subchondral sclerosis – Kellgren-Lawrence grade 4  
+
+*Post-operative:*  
+- X-ray (2025-11-03): Cemented total knee prosthesis in satisfactory alignment; no periprosthetic fracture or dislocation  
+- Haemoglobin Day 1: 10.6 g/dL (expected drop); Day 2: 10.5 g/dL (stable); no transfusion required  
+- Creatinine Day 1: 0.8 mg/dL (normal)  
+
+**Diagnoses**  
+1. Primary osteoarthritis of the right knee (Kellgren-Lawrence grade 4), treated with elective right total knee arthroplasty  
+2. Mild acute post-operative blood-loss anaemia (Hb 10.5 g/dL), not requiring transfusion  
+*Differential considered:* Inflammatory arthritis – not supported (no effusion, typical osteoarthritis radiograph)  
+
+**Hospital Course**  
+- **2025-11-03:** Admitted; losartan withheld morning of surgery. Underwent right total knee arthroplasty (cemented, posterior-stabilised) under spinal anaesthesia with adductor canal block. IV cefazolin prophylaxis and IV tranexamic acid given. Estimated blood loss 250 mL. Surgery uncomplicated. Evening physiotherapy: stood and walked 5 m with frame.  
+- **2025-11-04:** Rivaroxaban 10 mg daily started for VTE prophylaxis; cefazolin course completed (24-hour prophylaxis); losartan resumed. Walked 15 m with frame; knee flexion 70°. Haemoglobin 10.6 g/dL – asymptomatic, no transfusion.  
+- **2025-11-05:** Stair practice and transition to two crutches. Climbed stairs with rail; knee flexion 85°; wound dry. Haemoglobin stable at 10.5 g/dL.  
+- **2025-11-06:** Ready for discharge – independent with two crutches, climbing stairs with rail, wound clean and dry, pain 2-3/10.  
+
+**Procedures**  
+- **Right total knee arthroplasty (cemented, posterior-stabilised)** – 2025-11-03  
+  Indication: End-stage right knee osteoarthritis  
+  Result: Uncomplicated; estimated blood loss 250 mL; components well positioned on post-op X-ray; no complications  
+
+**Treatment and Medications During Hospitalisation**  
+- Cefazolin 2 g IV every 8 hours ×3 doses (pre-incision + 2 post-op) – completed 2025-11-04 (24-hour prophylaxis)  
+- Tranexamic acid 1 g IV once at incision – completed  
+- Paracetamol 1 g oral every 6 hours regular (changed from home PRN regimen)  
+- Oxycodone 5 mg oral every 4 hours PRN (max 4 doses/24h) – started for moderate-severe pain; morphine avoided due to intolerance  
+- Rivaroxaban 10 mg oral once daily – started 2025-11-04 for VTE prophylaxis  
+- Losartan 50 mg oral once daily – resumed 2025-11-04 (withheld morning of surgery)  
+
+**Clinical Condition at Discharge (2025-11-06)**  
+Stable. Independently mobile with two crutches and climbing stairs with rail. Right knee flexion 85°. Surgical wound clean and dry. Pain 2-3/10.  
+Vital signs: Temp 36.8°C, HR 80 bpm, BP 134/80 mmHg, RR 16/min, SpO₂ 97% RA.  
+
+**Final Diagnoses at Discharge**  
+1. Primary osteoarthritis of right knee, status post right total knee arthroplasty (2025-11-03)  
+2. Mild acute post-operative blood-loss anaemia (Hb 10.5 g/dL), not requiring transfusion  
+
+**Discharge Medications**  
+1. **Rivaroxaban** 10 mg oral twice daily – until 2025-11-17 inclusive (14 days total). Take same time daily; avoid NSAIDs.  
+2. **Paracetamol** 1 g oral every 6 hours regular – for 2 weeks, then as needed. Maximum 4 g/24h.  
+3. **Oxycodone** 5 mg oral every 4 hours PRN for severe pain – 5 days (20 tablets). Max 4 doses (20 mg)/24h; may cause drowsiness/constipation; no driving.  
+4. **Losartan** 50 mg oral once daily – ongoing, unchanged home medication.  
+
+**Discontinued Medications**  
+- Meloxicam – stopped 2025-10-27 per pre-operative instructions; not restarted due to bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review.  
+
+**Follow-up Instructions**  
+1. **Outpatient physiotherapy** – starting 2025-11-10, 3 times/week for 6 weeks. Continue daily home exercise programme.  
+2. **Orthopaedic clinic (wound check & staple removal)** – 2025-11-17 (post-op day 14). Keep dressing intact until this visit.  
+3. **Orthopaedic surgeon review** – 2025-12-15 (6-week post-op) with X-ray. Bring physiotherapy progress notes.  
+
+**Important Patient Instructions**  
+*Diet:* Normal balanced diet with good fluid and fibre intake.  
+*Activity:* Full weight-bearing as tolerated with two crutches; daily home knee exercises; ice 20 minutes 3-4 times daily; no driving for 6 weeks; avoid kneeling.  
+*Wound Care:* Keep dressing dry and intact until wound check 2025-11-17; shower with waterproof cover; no bath or swimming until staples removed and wound healed.  
+*Warning Signs – Seek immediate medical attention for:*  
+- Increasing redness, warmth, swelling, or discharge from wound  
+- Fever >38°C  
+- Calf pain or swelling  
+- Chest pain or sudden breathlessness  
+- Bleeding or black stools  
+- Sudden inability to bear weight  
+*Other:* Morphine intolerance (itching) documented; avoid NSAIDs (including meloxicam) while taking rivaroxaban.  
+
+**Prepared by:** Orthopaedic Team  
+**Date of Summary:** 2025-11-06

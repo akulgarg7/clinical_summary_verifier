@@ -1,0 +1,106 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Redacted] | Age: 19 years | Sex: Female | Height: 162 cm | Weight: 54 kg | Blood Group: O negative  
+Admission Date: 2026-01-09 at 23:50 | Discharge Date: 2026-01-12  
+Admission Type: Emergency | Primary Specialty: Endocrinology  
+
+**Reason for Admission**  
+Diabetic ketoacidosis (DKA) precipitated by insulin omission. Chief complaints: vomiting, abdominal pain, excessive thirst for 2 days.  
+
+**Relevant Medical History**  
+- Type 1 diabetes mellitus (diagnosed 2015)  
+- One prior DKA admission (2022)  
+- Missed all insulin doses for 3 days before admission after running out of insulin supply while away from home  
+- No previous surgeries  
+- Family history: Maternal aunt with type 1 DM; mother with hypothyroidism  
+- Social: Undergraduate student living in college hostel; never smoker; no alcohol use  
+- Allergies: No known drug allergies  
+
+**Home Medications (Prior to Admission)**  
+- Insulin glargine 20 units SC once daily at 21:00 (basal)  
+- Insulin aspart 1 unit per 10 g carbohydrate + correction 1 unit per 50 mg/dL above 150 mg/dL SC with each meal TID (prandial)  
+
+**Important Examination Findings (On Admission)**  
+- Vitals: Temp 37.1°C, HR 122 bpm, BP 104/66 mmHg, RR 28/min, SpO₂ 99% on room air  
+- Dry mucous membranes, capillary refill 3 seconds  
+- Kussmaul respirations, ketotic (fruity) breath odor  
+- Mild diffuse abdominal tenderness without guarding or rebound  
+- Alert and oriented, GCS 15  
+- Chest clear; no skin infection at insulin injection sites  
+
+**Important Investigations**  
+*Laboratory (2026-01-10):*  
+- Plasma glucose: 486 mg/dL (ref 70–140)  
+- Venous pH: 7.12 (ref 7.32–7.42)  
+- Serum bicarbonate: 8 mmol/L (ref 22–29)  
+- Blood β‑hydroxybutyrate: 6.1 mmol/L (ref <0.6)  
+- Serum potassium: 5.4 mmol/L (initial); 3.8 mmol/L at 6 hours (on replacement)  
+- Serum sodium: 131 mmol/L (corrected ~136 mmol/L for hyperglycemia)  
+- Serum creatinine: 1.2 mg/dL (pre‑renal); repeat 0.7 mg/dL on 2026-01-11  
+- HbA1c: 10.4% (poor glycemic control)  
+- Serum lipase: 28 U/L (normal; pancreatitis excluded)  
+- Resolution labs (same day): pH 7.34, bicarbonate 18 mmol/L, β‑hydroxybutyrate 0.4 mmol/L  
+- Fasting glucose (2026-01-11): 212 mg/dL  
+
+*Imaging (2026-01-10):*  
+- ECG: Sinus tachycardia 122 bpm; no peaked T waves; normal QTc  
+- Chest X‑ray: Clear lung fields; no consolidation; normal cardiac silhouette  
+
+*Other:*  
+- Urine β‑hCG: negative  
+- Urine ketones: 3+  
+- Urine culture: no growth  
+
+**Diagnoses**  
+1. **Primary:** Diabetic ketoacidosis, moderate severity, precipitated by insulin omission – **resolved**  
+2. **Secondary:** Type 1 diabetes mellitus with poor glycemic control (HbA1c 10.4%)  
+
+*Differential considerations (excluded):* Infection‑triggered DKA, acute pancreatitis, pregnancy.  
+
+**Hospital Course**  
+- **2026-01-10:** DKA protocol initiated: 0.9% NaCl 1 L bolus, fixed‑rate IV regular insulin infusion 0.1 units/kg/hr (5.4 units/hr) from 00:40 with hourly glucose monitoring. Potassium chloride 40 mmol/L added to IV fluids at 02:00 when K⁺ fell below 5.0 mmol/L. Dextrose 10% infusion started at 04:30 when glucose dropped below 250 mg/dL while ketosis persisted. Insulin glargine 20 units SC given at 12:00. DKA resolved at 14:00 (pH 7.34, bicarbonate 18 mmol/L, ketones 0.4 mmol/L); IV insulin and dextrose stopped; insulin aspart resumed with dinner.  
+- **2026-01-11:** IV fluids and potassium discontinued. Insulin glargine increased to 22 units nightly at 21:00 due to fasting glucose 212 mg/dL. Diabetes nurse educator session: sick‑day rules, blood ketone testing, insulin supply planning; patient demonstrated ketone testing; 30‑day insulin and ketone strip supply arranged. Capillary glucose 110–190 mg/dL over next 24 hours.  
+- **2026-01-12:** Stable, eating and drinking normally, no ketones; discharged home to college hostel.  
+
+**Procedures**  
+None.  
+
+**Treatment and Medications During Hospitalization**  
+- IV 0.9% NaCl (bolus and continuous infusion) – completed  
+- IV regular insulin infusion 0.1 units/kg/hr – stopped at resolution  
+- IV potassium chloride 40 mmol/L in maintenance fluids – stopped 2026-01-11  
+- IV dextrose 10% – stopped at resolution  
+- Ondansetron 4 mg IV q8h PRN (two doses given) – stopped  
+- Insulin glargine 20 units SC once (transition dose) – dose subsequently increased  
+- Insulin aspart (home regimen) – resumed 2026-01-10 and continued  
+- Insulin glargine 22 units SC nightly from 2026-01-11 – continued at discharge  
+
+**Clinical Condition at Discharge**  
+Stable. DKA resolved. Eating and drinking normally. Capillary glucose 110–190 mg/dL over preceding 24 hours. No ketonemia.  
+Discharge vitals: Temp 36.7°C, HR 84 bpm, BP 112/70 mmHg, RR 16/min, SpO₂ 99% on room air.  
+
+**Discharge Medications**  
+1. **Insulin glargine** 22 units SC once daily at 21:00 (increased from 20 units) – ongoing  
+   *Special instruction:* Never skip basal insulin, even when unwell or not eating.  
+2. **Insulin aspart** 1 unit per 10 g carbohydrate + correction 1 unit per 50 mg/dL above 150 mg/dL SC with each meal TID – ongoing (unchanged).  
+
+**Follow‑Up Instructions**  
+1. **Diabetes nurse educator (telephone)** – 2026-01-16: Review glucose and ketone log; confirm insulin supply. Patient to keep written log of glucose readings and insulin doses.  
+2. **Endocrinology outpatient clinic** – 2026-01-26: Insulin dose review after DKA; HbA1c 10.4%. Bring glucose meter and log.  
+
+**Important Patient Instructions**  
+- **Diet:** Regular meals with carbohydrate counting; do not skip meals; avoid sugary drinks except to treat hypoglycemia.  
+- **Activity:** Normal activity; check glucose before exercise and carry fast‑acting glucose.  
+- **Warning signs – seek immediate medical attention if:**  
+  - Vomiting and unable to keep fluids down  
+  - Blood ketones ≥1.5 mmol/L despite correction insulin  
+  - Glucose >300 mg/dL on two readings despite correction  
+  - Abdominal pain or rapid breathing  
+  - Drowsiness or confusion  
+  - Glucose <70 mg/dL not improving after treatment  
+- **Sick‑day rules:** Never stop basal insulin; check blood ketones when glucose >250 mg/dL or when unwell.  
+- **Supplies:** Keep a spare 30‑day insulin supply (provided); carry glucose tablets at all times.  
+
+**Prepared by:** Medical Documentation Assistant  
+**Date:** 2026-01-12

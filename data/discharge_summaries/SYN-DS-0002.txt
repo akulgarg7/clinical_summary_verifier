@@ -1,0 +1,90 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details:**  
+62-year-old male, bus depot supervisor. Blood group B positive.
+
+**Admission Details:**  
+Emergency admission on 2025-06-03 at 07:15 for suspected acute coronary syndrome. Chief complaint: central chest pressure radiating to left arm with sweating for 3 hours. Haemodynamically stable on arrival with ongoing chest pain (6/10).
+
+**Relevant Medical History:**  
+- Type 2 diabetes mellitus (diagnosed 2017), suboptimally controlled (HbA1c 8.1%)  
+- Essential hypertension (diagnosed 2014)  
+- Hypercholesterolaemia (diagnosed 2018)  
+- Right inguinal hernia repair (2009)  
+- Family history: father myocardial infarction at 58, mother type 2 diabetes  
+- Current smoker: 15 cigarettes/day (30 pack-years)  
+- Occasional alcohol (4 units/week)  
+- Allergy: sulfamethoxazole (sulfonamide antibiotic) – generalised maculopapular rash, moderate severity
+
+**Pre-admission Medications:**  
+- Metformin 1000 mg oral twice daily with meals  
+- Ramipril 5 mg oral once daily  
+- Atorvastatin 20 mg oral once daily at night
+
+**Important Examination Findings (on admission):**  
+Diaphoretic; BP 156/94 mmHg, HR 92 bpm, RR 20, SpO₂ 96% on room air, temp 36.8°C. Normal heart sounds, no murmurs or third heart sound. Clear lung fields, JVP not raised, no peripheral oedema. Radial and femoral pulses palpable and symmetrical.
+
+**Important Investigations:**  
+- **ECG (2025-06-03):** Sinus rhythm 92 bpm; 1.5 mm horizontal ST depression in V4–V6, I, aVL; no ST elevation (lateral ischaemic changes, no STEMI criteria).  
+- **High-sensitivity troponin I:** 182 ng/L (0 hour) → 1240 ng/L (3 hours) (ref <20 ng/L).  
+- **Chest X-ray (2025-06-03):** Normal cardiac size, clear lungs, no pulmonary oedema.  
+- **Echocardiogram (2025-06-04):** LVEF 45% with lateral wall hypokinesia; no significant valvular disease, no pericardial effusion, no LV thrombus.  
+- **Laboratory:** Creatinine 1.0 mg/dL (admission), 1.1 mg/dL (post-contrast, 2025-06-05) – no acute kidney injury. eGFR 78 mL/min/1.73m². Random glucose 214 mg/dL, HbA1c 8.1%, LDL 142 mg/dL. Hb 13.9 g/dL, platelets 238 ×10⁹/L, K⁺ 4.3 mmol/L, INR 1.0.
+
+**Diagnoses:**  
+1. Non-ST-elevation myocardial infarction (NSTEMI) due to proximal left circumflex artery stenosis – **primary**  
+2. Type 2 diabetes mellitus, suboptimally controlled (HbA1c 8.1%)  
+3. Mild left ventricular systolic dysfunction (LVEF 45%)  
+
+*Differential considered and excluded:* unstable angina (rising troponin), aortic dissection (symmetrical pulses, normal mediastinum).
+
+**Hospital Course:**  
+- **2025-06-03:** Admitted to cardiac care unit. Aspirin 300 mg loading dose, fondaparinux 2.5 mg SC daily, sublingual GTN given. Atorvastatin increased to 80 mg nightly. Chest pain resolved by 12:00 with no recurrence.  
+- **2025-06-04:** Metformin held prior to contrast. Coronary angiography and PCI via right radial artery: 90% stenosis proximal left circumflex (culprit), 40% mid LAD, no significant RCA disease. Successful drug-eluting stent deployment with TIMI 3 flow, no complications. Ticagrelor 180 mg loading dose given; fondaparinux stopped. Transthoracic echocardiogram performed; metoprolol succinate 25 mg daily started.  
+- **2025-06-05:** Renal function rechecked – creatinine 1.1 mg/dL (no contrast nephropathy). Mobilised on ward without angina.  
+- **2025-06-06:** Metformin resumed. Smoking cessation counselling provided; patient agreed to quit but declined nicotine replacement therapy.  
+- **2025-06-07:** Discharged home in stable condition.
+
+**Procedures:**  
+1. **Coronary angiography via right radial artery (2025-06-04):** 90% proximal LCx stenosis (culprit), 40% mid LAD, no significant RCA disease. No complications.  
+2. **PCI with one drug-eluting stent to proximal left circumflex artery (2025-06-04):** Successful deployment, 0% residual stenosis, TIMI 3 flow. No access-site haematoma.
+
+**Treatment and Medications During Hospitalisation:**  
+- Aspirin 300 mg loading dose (2025-06-03), then 75 mg daily from 2025-06-04  
+- Fondaparinux 2.5 mg SC daily (2025-06-03 to 2025-06-04, stopped post-PCI)  
+- GTN 400 mcg sublingual PRN (one dose used)  
+- Atorvastatin increased to 80 mg nightly from 2025-06-03  
+- Ramipril 5 mg daily continued  
+- Metformin held 2025-06-04 morning, resumed 2025-06-06  
+- Ticagrelor 180 mg loading dose (2025-06-04), then 90 mg twice daily  
+- Metoprolol succinate 25 mg daily started 2025-06-04
+
+**Clinical Condition at Discharge (2025-06-07):**  
+Stable, chest-pain free since 2025-06-03, mobilising independently. Vital signs: BP 132/80 mmHg, HR 68 bpm, RR 16, SpO₂ 98% on room air, temp 36.7°C.
+
+**Discharge Medications:**  
+1. Aspirin 75 mg oral once daily – lifelong (take after food; do not stop without cardiologist advice)  
+2. Ticagrelor 90 mg oral twice daily – 12 months until 2026-06-04 (do not stop without cardiologist advice; may cause mild breathlessness)  
+3. Atorvastatin 80 mg oral once daily at night – ongoing (dose increased from 20 mg)  
+4. Metoprolol succinate 25 mg oral once daily – ongoing (do not stop suddenly)  
+5. Ramipril 5 mg oral once daily – ongoing (unchanged home medication)  
+6. Metformin 1000 mg oral twice daily with meals – ongoing (resumed 2025-06-06 after contrast)  
+7. Glyceryl trinitrate 400 mcg sublingual PRN for chest pain – ongoing (sit down; one dose; may repeat every 5 minutes up to 3 doses; call emergency services if pain persists 5 minutes after first dose)
+
+**Follow-up Instructions:**  
+1. **Cardiology outpatient clinic:** 2025-06-21 – post-NSTEMI review (symptoms, BP, HR, antiplatelet adherence); bring medication list.  
+2. **Cardiac rehabilitation programme:** within 2 weeks of discharge – supervised exercise and secondary prevention; referral sent, await appointment call.  
+3. **Primary care physician:** 2025-07-19 – fasting lipid profile and LFTs 6 weeks after atorvastatin increase; diabetes review; fasting blood test before visit.  
+4. **Echocardiography service:** 3 months (around 2025-09-04) – repeat echocardiogram to reassess LVEF; appointment letter to follow.
+
+**Important Patient Instructions:**  
+- **Diet:** Heart-healthy diabetic diet: low saturated fat, salt <5 g/day, limit refined sugars.  
+- **Activity:** Gradually increase walking; avoid lifting >2 kg with right hand for 48 hours; avoid strenuous exertion until cardiac rehabilitation review; no driving for 1 week.  
+- **Wound care:** Keep right radial puncture site clean and dry for 24 hours; monitor for swelling or bleeding.  
+- **Warning signs requiring urgent medical attention:**  
+  - Chest pain not relieved within 5 minutes of GTN  
+  - New or worsening shortness of breath  
+  - Black stools, blood in urine, or unusual bleeding  
+  - Swelling, bleeding, or numbness at right wrist  
+  - Fainting or palpitations  
+- **Other:** Stop smoking completely. Do not stop aspirin or ticagrelor without cardiologist advice. Sulfonamide antibiotic allergy documented.

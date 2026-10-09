@@ -1,0 +1,35 @@
+[
+  {
+    "error_id": "E001",
+    "case_id": "SYN-DS-0006",
+    "error_type": "medication_dose",
+    "fact_id": "SYN-DS-0006-F139",
+    "original_value": "10 mg",
+    "incorrect_value": "20 mg",
+    "expected_verdict": "CONTRADICTED",
+    "expected_severity": "HIGH",
+    "output_file": "data\\error_injected\\SYN-DS-0006_E001.txt"
+  },
+  {
+    "error_id": "E002",
+    "case_id": "SYN-DS-0006",
+    "error_type": "medication_frequency",
+    "fact_id": "SYN-DS-0006-F141",
+    "original_value": "once daily",
+    "incorrect_value": "twice daily",
+    "expected_verdict": "CONTRADICTED",
+    "expected_severity": "HIGH",
+    "output_file": "data\\error_injected\\SYN-DS-0006_E002.txt"
+  },
+  {
+    "error_id": "E003",
+    "case_id": "SYN-DS-0003",
+    "error_type": "laboratory",
+    "fact_id": "SYN-DS-0003-F055",
+    "original_value": "1.9",
+    "incorrect_value": "2.9 mg/dL",
+    "expected_verdict": "CONTRADICTED",
+    "expected_severity": "HIGH",
+    "output_file": "data\\error_injected\\SYN-DS-0003_E003.txt"
+  }
+]

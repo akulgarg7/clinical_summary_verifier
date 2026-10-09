@@ -1,0 +1,96 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Redacted] | Age: 58 years | Sex: Male | Height: 168 cm | Weight: 66 kg | Blood Group: A negative  
+Case ID: SYN-DS-0007 | Primary Specialty: Gastroenterology | Admission Type: Transfer  
+
+**Admission**  
+Date/Time: 2026-05-20 16:20  
+Reason: Upper gastrointestinal bleeding; transferred from a district hospital for endoscopy  
+Chief Complaint: Black tarry stools (2 days) and one episode of haematemesis (morning of 2026-05-20)  
+Initial Condition: Pale, tachycardic (HR 112 bpm), hypotensive (BP 98/60 mmHg), alert (GCS 15); received 1 L IV crystalloid prior to transfer  
+
+**Relevant Medical History**  
+- Chronic mechanical low back pain (since 2023)  
+- Essential hypertension (diagnosed 2020)  
+- No previous GI bleeding, no known liver disease, no previous surgeries  
+- No family history of GI cancer  
+- Social: Never smoker; alcohol ~4 units/week; construction site supervisor  
+
+**Allergies**  
+Povidone-iodine (topical) – contact dermatitis (mild)  
+
+**Pre-Admission Medications**  
+- Diclofenac 50 mg PO TID × 6 weeks (OTC for back pain)  
+- Amlodipine 5 mg PO daily  
+
+**Initial Examination (2026-05-20)**  
+Vitals: Temp 36.9°C, HR 112 bpm, BP 98/60 mmHg, RR 20/min, SpO₂ 97% RA  
+Findings: Conjunctival pallor; melaena on DRE; mild epigastric tenderness without guarding/rebound; no stigmata of chronic liver disease; no hepatosplenomegaly; cool peripheries, CRT 3 sec  
+
+**Key Investigations**  
+*Laboratory (2026-05-20):* Hb 7.1 g/dL, MCV 86 fL, Platelets 312×10⁹/L, INR 1.1, BUN 48 mg/dL, Creatinine 1.1 mg/dL, ALT 24 U/L, Bilirubin 0.7 mg/dL, Lactate 2.4 mmol/L  
+*Post-transfusion (2026-05-21):* Hb 8.9 g/dL  
+*Pre-discharge (2026-05-23):* Hb 9.4 g/dL (stable)  
+*Imaging:* ECG – sinus tachycardia, no ischaemic changes; Erect CXR – no free air, clear lungs, normal cardiac size  
+*Other:* Glasgow-Blatchford score 13 (high risk); Blood group A negative, antibody screen negative; Rapid urease test (antral biopsy) positive for *H. pylori* (reported 2026-05-22)  
+
+**Diagnoses**  
+1. Upper GI haemorrhage from NSAID-associated duodenal bulb ulcer (Forrest IIa, non-bleeding visible vessel) – treated endoscopically  
+2. *Helicobacter pylori* infection (rapid urease test positive)  
+3. Acute blood-loss anaemia – transfused 2 units packed red cells (discharge Hb 9.4 g/dL)  
+*Differentials excluded:* Variceal haemorrhage (no varices, no liver disease), perforated ulcer (no pneumoperitoneum), gastric malignancy (no gastric mass)  
+
+**Hospital Course**  
+- **2026-05-20:** Admitted to GI HDU. IV pantoprazole 80 mg bolus → 8 mg/hr infusion. 2 units PRBC transfused. Diclofenac stopped; amlodipine withheld. Post-transfusion: HR 96 bpm, BP 112/70 mmHg.  
+- **2026-05-21:** OGD with dual endoscopic haemostasis (adrenaline 1:10,000 8 mL + 2 haemoclips) and antral biopsy. Found 12 mm anterior duodenal bulb ulcer with non-bleeding visible vessel (Forrest IIa) – successfully treated; no active bleeding; no varices; mild antral erythema.  
+- **2026-05-22:** Diet advanced; rapid urease test positive; paracetamol started for back pain.  
+- **2026-05-23:** IV pantoprazole completed (72 hr) → switched to oral 40 mg BID. *H. pylori* eradication started (amoxicillin 1 g BID + clarithromycin 500 mg BID). Amlodipine resumed. Hb 9.4 g/dL, stable; no rebleeding.  
+- **2026-05-24:** Tolerating normal diet; no melaena since 2026-05-21. Ready for discharge.  
+
+**Procedures**  
+1. Transfusion of 2 units packed red cells (2026-05-20) – Hb rose to 8.9 g/dL; no reaction.  
+2. OGD with endoscopic haemostasis (adrenaline injection + 2 haemoclips) and antral biopsy (2026-05-21) – successful treatment of Forrest IIa ulcer; no complications.  
+
+**Medications During Hospitalisation**  
+- Pantoprazole 80 mg IV bolus then 8 mg/hr infusion (2026-05-20 to 2026-05-23)  
+- Paracetamol 1 g PO Q6H PRN (from 2026-05-22)  
+- Pantoprazole 40 mg PO BID (from 2026-05-23)  
+- Amoxicillin 1 g PO BID (from 2026-05-23, 14-day course)  
+- Clarithromycin 500 mg PO BID (from 2026-05-23, 14-day course)  
+- Amlodipine 5 mg PO daily (withheld 2026-05-20 to 2026-05-22; resumed 2026-05-23)  
+
+**Condition at Discharge (2026-05-24)**  
+Stable. No further bleeding since 2026-05-21. Hb 9.4 g/dL (stable). Tolerating normal diet.  
+Vitals: Temp 36.7°C, HR 82 bpm, BP 128/80 mmHg, RR 16/min, SpO₂ 98% RA  
+
+**Discharge Medications**  
+1. **Pantoprazole** 40 mg PO BID 30 min before breakfast & dinner × 14 days (2026-05-23 to 2026-06-05), then 40 mg PO daily before breakfast 2026-06-06 to 2026-07-15 (completes 8 weeks PPI).  
+2. **Amoxicillin** 1 g PO BID × 14 days (until 2026-06-05) – complete full course.  
+3. **Clarithromycin** 500 mg PO BID × 14 days (until 2026-06-05) – complete full course; may cause metallic taste; can increase amlodipine effect – report dizziness/ankle swelling.  
+4. **Amlodipine** 5 mg PO daily – ongoing (unchanged home dose).  
+5. **Paracetamol** 1 g PO Q6H PRN (max 4 g/24h) – for back pain; use instead of NSAIDs.  
+
+**Discontinued Medication**  
+- Diclofenac (stopped 2026-05-20) – NSAID-associated ulcer bleeding; **avoid all NSAIDs permanently** unless advised by a gastroenterologist.  
+
+**Follow-Up**  
+- **Primary care physician:** 2026-05-29 – repeat FBC and iron studies; report black stools or dizziness.  
+- **Gastroenterology clinic:** 2026-08-03 – review ulcer healing and *H. pylori* eradication result. Urea breath test on/after 2026-07-29 (at least 2 weeks after stopping pantoprazole and 4 weeks after finishing antibiotics).  
+
+**Patient Instructions**  
+- **Diet:** Normal; avoid alcohol during clarithromycin course and until ulcer healed (8 weeks).  
+- **Activity:** Light activity for 1 week; avoid heavy lifting at work for 2 weeks.  
+- **Warning signs – seek immediate medical attention if:**  
+  - Black tarry stools recur  
+  - Vomiting blood or coffee-ground material  
+  - Dizziness or fainting  
+  - Severe abdominal pain  
+  - Breathlessness or chest pain  
+  - Severe diarrhoea or rash while on antibiotics  
+- **Other:**  
+  - Complete the full 14-day *H. pylori* eradication course.  
+  - Povidone-iodine skin allergy documented – use alternative skin antiseptic.  
+
+**Prepared by:** Medical Documentation Assistant  
+**Date:** 2026-05-24

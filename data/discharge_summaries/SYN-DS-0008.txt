@@ -1,0 +1,99 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Redacted]  
+Date of Birth: [Redacted] (Age: 8 years)  
+Sex: Female  
+Height: 128 cm | Weight: 26 kg | Blood Group: B positive  
+Case ID: SYN-DS-0008  
+
+**Admission Details**  
+Admission Date/Time: 2026-07-02 19:40  
+Admission Type: Emergency  
+Primary Specialty: Paediatrics  
+Reason for Admission: Acute severe asthma exacerbation  
+Chief Complaint: Wheezing and breathlessness with difficulty speaking in full sentences  
+Symptom Duration: 2 days of cough and runny nose; increasing wheeze for 12 hours  
+
+**Relevant Medical History**  
+- Asthma (diagnosed age 4); one previous hospital admission (2024); no prior ICU admission  
+- Peanut allergy (diagnosed age 3); anaphylaxis (lip swelling, wheeze, vomiting) in 2021  
+- Inconsistent use of inhaled fluticasone before admission (3–4 days/week)  
+- No previous surgeries  
+- Family history: Mother – asthma; Father – allergic rhinitis  
+- Social: School student (Class 3); lives with parents; no household tobacco smoke exposure  
+
+**Allergies**  
+- Peanut – Severe (anaphylaxis)  
+- No known drug allergies  
+
+**Pre-admission Medications**  
+- Fluticasone propionate 100 mcg via MDI with spacer twice daily (controller)  
+- Salbutamol 200 mcg (2 puffs of 100 mcg) via MDI with spacer as needed (reliever)  
+- Adrenaline (epinephrine) auto-injector 0.15 mg IM as needed for anaphylaxis  
+
+**Initial Examination (2026-07-02)**  
+*Vital Signs:* Temperature 37.8°C, HR 142 bpm, BP 104/62 mmHg, RR 38 breaths/min, SpO₂ 90% on room air  
+*Physical Findings:* Widespread bilateral expiratory wheeze; reduced air entry at bases (not silent chest); subcostal and intercostal recession; speaking in short phrases; alert, not drowsy; no stridor, lip/facial swelling, or urticaria; clear rhinorrhoea  
+
+**Important Investigations**  
+*Laboratory (2026-07-02):* Venous pH 7.36, pCO₂ 43 mmHg (no hypercapnia); WBC 11.8 x10⁹/L; CRP 6 mg/L (mildly raised); Na⁺ 138 mmol/L; K⁺ 3.3 mmol/L (low, post-salbutamol); glucose 152 mg/dL (high, post-salbutamol/prednisolone); creatinine 0.4 mg/dL  
+*Repeat K⁺ (2026-07-03):* 3.9 mmol/L (normal, corrected without supplementation)  
+*Imaging:* Chest X-ray (AP) – hyperinflation with bilateral peribronchial thickening; no consolidation, pneumothorax, or pneumomediastinum; consistent with acute asthma  
+*Other:* Nasopharyngeal viral PCR – Rhinovirus positive; influenza A/B, RSV, SARS-CoV-2 negative. Peak expiratory flow (2026-07-04): 220 L/min (~85% of personal best 260 L/min)  
+
+**Diagnoses**  
+*Primary:* Acute severe asthma exacerbation (resolved)  
+*Secondary:* Rhinovirus respiratory infection (exacerbation trigger)  
+*Differentials excluded:* Pneumonia (no consolidation on CXR), anaphylaxis (no exposure, no urticaria/angioedema), inhaled foreign body (bilateral symmetrical wheeze after viral prodrome)  
+
+**Hospital Course**  
+- **2026-07-02:** Three back-to-back oxygen-driven nebulisers of salbutamol 2.5 mg + ipratropium 250 mcg; oral prednisolone 30 mg. Partial improvement; persistent recession, SpO₂ 92% on oxygen.  
+- **2026-07-02:** IV magnesium sulfate 1040 mg (40 mg/kg) over 20 min; admitted to paediatric HDU with 2-hourly salbutamol nebulisers and nasal O₂ 2 L/min (target SpO₂ 94–98%). RR fell to 30 breaths/min by 23:00; speaking in sentences.  
+- **2026-07-03:** Weaned to salbutamol 600 mcg (6 puffs) via MDI/spacer every 4 hours; oxygen stopped at 10:00; repeat K⁺ 3.9 mmol/L. SpO₂ 96% on room air.  
+- **2026-07-03:** Transferred to general ward; inhaler technique and adherence reviewed – correct spacer technique demonstrated by child and parents.  
+- **2026-07-04:** Controller stepped up from fluticasone 100 mcg twice daily to fluticasone/salmeterol 100/50 mcg twice daily; written asthma action plan provided. Stable on 4-hourly salbutamol >24 hours; fit for discharge.  
+
+**Procedures:** None  
+
+**Treatment and Medications During Hospitalization**  
+- Salbutamol 2.5 mg nebulised (oxygen-driven) + ipratropium 250 mcg nebulised every 20 min × 3 doses (2026-07-02)  
+- Prednisolone 30 mg oral once daily (started 2026-07-02; 5-day course to 2026-07-06)  
+- Magnesium sulfate 1040 mg IV once over 20 min (2026-07-02)  
+- Salbutamol 2.5 mg nebulised every 2 hours (2026-07-02 to 2026-07-03)  
+- Salbutamol 600 mcg via MDI/spacer every 4 hours (from 2026-07-03)  
+- Fluticasone propionate 100 mcg via MDI/spacer twice daily (2026-07-03 to 2026-07-04) then discontinued  
+- Fluticasone/salmeterol 100/50 mcg via DPI twice daily (started 2026-07-04)  
+- Adrenaline auto-injector 0.15 mg IM as needed for anaphylaxis (continued, not administered)  
+
+**Clinical Condition at Discharge (2026-07-04)**  
+Stable; SpO₂ 97% on room air for >24 hours; stable on 4-hourly salbutamol; eating and playing normally; discharged home with parents.  
+*Discharge Vital Signs:* Temp 36.8°C, HR 108 bpm, BP 100/64 mmHg, RR 22 breaths/min, SpO₂ 97% on room air.  
+
+**Discharge Medications**  
+1. **Salbutamol** 600 mcg (6 puffs of 100 mcg) via MDI with spacer every 4 hours for 48 hours (until 2026-07-06), then reduce to 200 mcg (2 puffs) as needed. Seek urgent review if needed more often than every 4 hours.  
+2. **Prednisolone** 30 mg oral once daily in morning with food for 2 more days (2026-07-05 and 2026-07-06; completes 5-day course).  
+3. **Fluticasone/salmeterol** 100/50 mcg via DPI twice daily ongoing. Use daily even when well; rinse mouth after use.  
+4. **Adrenaline (epinephrine) auto-injector** 0.15 mg IM as needed for anaphylaxis ongoing. Carry at all times; school to hold a spare.  
+
+*Discontinued:* Fluticasone propionate 100 mcg twice daily (substituted by fluticasone/salmeterol on 2026-07-04).  
+
+**Follow-up Instructions**  
+1. **Paediatrician (primary care)** – 2026-07-06: Review after severe exacerbation and on last day of prednisolone. Bring asthma action plan and inhalers.  
+2. **Paediatric asthma and allergy clinic** – 2026-08-01: Controller therapy review, spirometry, and peanut allergy management plan update. Record daily symptoms and salbutamol use.  
+
+**Important Patient Instructions**  
+- **Diet:** Normal diet; strict peanut avoidance; check food labels.  
+- **Activity:** Rest at home for 2–3 days; return to school when needing salbutamol no more than every 4 hours; avoid strenuous exercise until symptom-free.  
+- **Warning Signs – Seek Urgent Medical Attention If:**  
+  - Needing salbutamol more often than every 4 hours  
+  - Difficulty speaking, eating, or drinking due to breathlessness  
+  - Blue/grey lips  
+  - Chest or neck sucking in with breathing  
+  - Drowsiness  
+  - No improvement after 10 puffs of salbutamol (call emergency services)  
+  - Signs of anaphylaxis: use adrenaline auto-injector and call emergency services  
+- **Other:** Follow written asthma action plan (given 2026-07-04); always use spacer with MDI; keep home smoke-free.  
+
+**Prepared by:** [Automated Medical Documentation Assistant]  
+**Date:** 2026-07-04

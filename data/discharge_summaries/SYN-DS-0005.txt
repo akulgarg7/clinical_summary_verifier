@@ -1,0 +1,99 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Redacted] | Age: 68 | Sex: Male | DOB: [Redacted]  
+Height: 172 cm | Weight: 80 kg | Blood Group: AB positive  
+Admission Date: 14/02/2026 09:05 | Discharge Date: 21/02/2026  
+Admission Type: Emergency | Primary Specialty: Neurology  
+
+**Reason for Admission**  
+Acute ischaemic stroke – thrombolysis pathway. Sudden right arm and face weakness with difficulty speaking; symptom duration 55 minutes on arrival (last known well 08:10). NIHSS 9 on admission.
+
+**Relevant Medical History**  
+- Essential hypertension (diagnosed 2016)  
+- Hypercholesterolaemia (diagnosed 2019)  
+- No prior stroke, TIA, or atrial fibrillation  
+- Pre-stroke modified Rankin Scale 0 (independent)  
+- Laparoscopic cholecystectomy (2018)  
+- Family history: brother with ischaemic stroke at age 72  
+- Social: former smoker (quit 2015, 20 pack-years), ~6 units alcohol/week, retired bank manager  
+
+**Allergies**  
+Latex – contact dermatitis (mild)
+
+**Medications on Admission**  
+- Amlodipine 10 mg once daily  
+- Simvastatin 20 mg once daily at night  
+
+**Examination on Admission**  
+Vital signs: Temp 36.6°C, HR 112 bpm (irregularly irregular), BP 168/96 mmHg, RR 18/min, SpO₂ 97% on room air.  
+Neurological: NIHSS 9 – right lower facial weakness, right arm MRC 2/5, right leg drift MRC 4/5, mild right arm sensory loss, mild-to-moderate expressive aphasia with preserved comprehension, mild dysarthria, no visual field defect or gaze deviation. Irregularly irregular pulse; no carotid bruits.
+
+**Key Investigations**  
+- **CT head (14/02):** No haemorrhage; subtle left insular ribbon loss; ASPECTS 9.  
+- **CT angiography (14/02):** Patent intracranial vessels; no large vessel occlusion; <30% bilateral ICA stenosis.  
+- **MRI brain DWI (15/02):** Acute infarct left frontal operculum and insular cortex (~18 mL); no haemorrhagic transformation.  
+- **Transthoracic echocardiogram (16/02):** Dilated left atrium (46 mm), LVEF 58%, no thrombus or vegetation.  
+- **ECG (14/02):** Atrial fibrillation, ventricular rate 112 bpm; no acute ischaemic changes.  
+- **Laboratory:** Normal glucose, INR, platelets, aPTT, Hb, creatinine, K⁺, troponin, HbA1c, TSH. LDL cholesterol 128 mg/dL (target <70 mg/dL post-stroke).  
+- **Bedside swallow screen:** Passed – safe for oral intake.
+
+**Diagnoses**  
+1. Acute ischaemic stroke, left MCA territory (left frontal operculum and insula), cardioembolic – treated with IV tenecteplase.  
+2. Atrial fibrillation, newly diagnosed (CHA₂DS₂-VASc score 4).  
+3. Essential hypertension.  
+
+**Hospital Course**  
+- **14/02:** Stroke code activation. IV tenecteplase 20 mg administered at 09:48 (door-to-needle 43 min). No haemorrhagic complications. Post-thrombolysis BP spike to 186/100 mmHg – amlodipine withheld, IV labetalol 10 mg given; BP reduced to 158/90 mmHg.  
+- **15/02:** MRI confirmed no haemorrhagic transformation. Started aspirin 300 mg daily, atorvastatin 80 mg nightly (replacing simvastatin), metoprolol tartrate 25 mg twice daily for rate control. NIHSS improved to 5.  
+- **16/02:** Echocardiogram – dilated left atrium, normal LV function, no thrombus.  
+- **17/02:** Amlodipine resumed at reduced dose 5 mg daily; BP 130–140/78–85 mmHg, ventricular rate 78–88 bpm.  
+- **18/02:** PT/OT/SLT assessments – residual right hand weakness (MRC 4/5) and mild word-finding difficulty. NIHSS 3; walking with supervision.  
+- **20/02:** Apixaban 5 mg twice daily commenced (day 6 post-stroke); aspirin stopped (last dose 19/02). No bleeding; neurologically stable.  
+- **21/02:** Clinically stable for transfer. NIHSS 3, HR 76 bpm irregular, BP 132/78 mmHg. Discharged to inpatient rehabilitation unit.
+
+**Procedures**  
+None.
+
+**Treatment and Medications During Hospitalisation**  
+- Tenecteplase 20 mg IV bolus (14/02) – completed.  
+- Labetalol 10 mg IV once (14/02) – stopped.  
+- Aspirin 300 mg daily (15/02–19/02) – stopped.  
+- Atorvastatin 80 mg nightly (from 15/02) – continued.  
+- Metoprolol tartrate 25 mg twice daily (from 15/02) – continued.  
+- Amlodipine withheld 14–16/02; resumed 5 mg daily from 17/02 – continued.  
+- Apixaban 5 mg twice daily (from 20/02) – continued.
+
+**Condition at Discharge**  
+Stable and improved. NIHSS 3 (mild right hand weakness, mild word-finding difficulty). Walking with supervision. Discharged to inpatient rehabilitation unit for ongoing therapy.
+
+**Discharge Medications**  
+1. **Apixaban** 5 mg twice daily – long-term (stroke prevention in AF). *Do not miss doses; avoid aspirin/NSAIDs unless prescribed.*  
+2. **Atorvastatin** 80 mg once daily at night – long-term (secondary stroke prevention). *Replaces simvastatin; do not take simvastatin.*  
+3. **Metoprolol tartrate** 25 mg twice daily – ongoing (AF rate control). *Do not stop abruptly.*  
+4. **Amlodipine** 5 mg once daily – ongoing (hypertension). *Dose reduced from 10 mg.*
+
+**Discontinued Medications**  
+- Simvastatin (substituted by atorvastatin 80 mg, 15/02).  
+- Aspirin (interim antiplatelet; stopped 19/02 when apixaban started).
+
+**Follow-up Arrangements**  
+1. **Inpatient rehabilitation unit** – transfer 21/02/2026; continuation of PT/OT/SLT.  
+2. **Cardiology clinic** – 21/03/2026; AF rate control and anticoagulation review. Bring HR/BP record.  
+3. **Stroke neurology clinic** – 04/04/2026 (6 weeks); post-stroke review and driving clearance. *No driving until cleared.*  
+4. **Primary care physician** – 11/04/2026; lipid profile and LFTs 8 weeks after atorvastatin initiation. Target LDL <70 mg/dL.
+
+**Patient Instructions**  
+- **Diet:** Low-salt (<5 g/day), heart-healthy; normal consistency diet and fluids (swallow screen passed).  
+- **Activity:** Continue rehabilitation; walk with supervision. No driving for at least 1 month and until cleared by stroke clinic.  
+- **Wound care:** Not applicable.  
+- **Warning signs – seek immediate medical attention for:**  
+  - New/worsening weakness, numbness, facial droop, or speech difficulty.  
+  - Sudden vision loss or severe headache.  
+  - Black stools, blood in urine, vomiting blood, or prolonged nosebleed.  
+  - Palpitations with dizziness or fainting.  
+- **Other:** Latex allergy – ensure latex-free equipment. Do not take aspirin, clopidogrel, or NSAIDs with apixaban unless prescribed. Long-term BP target <130/80 mmHg.
+
+**Discharge Authorised By:** [Neurology Consultant]  
+**Date:** 21/02/2026  
+**Copies to:** GP, Rehabilitation Unit, Cardiology, Stroke Clinic.

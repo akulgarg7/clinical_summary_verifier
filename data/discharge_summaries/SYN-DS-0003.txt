@@ -1,0 +1,114 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Redacted]  
+Age: 74 years | Sex: Female  
+Height: 158 cm | Weight: 62 kg | Blood Group: A positive  
+Admission Date: 2025-09-18 21:30 | Discharge Date: 2025-09-26  
+Admission Type: Emergency  
+Primary Specialty: Pulmonology / Critical Care  
+
+**Reason for Admission**  
+Sepsis with suspected pneumonia. Chief complaint: fever, productive cough, breathlessness, and new confusion for 3 days. On arrival: critically unwell – hypotensive, tachypnoeic, hypoxaemic, and acutely confused.
+
+**Relevant Medical History**  
+- Hypothyroidism (diagnosed 2012)  
+- Essential hypertension (diagnosed 2010)  
+- Baseline serum creatinine 0.8 mg/dL (April 2025)  
+- Surgeries: Total abdominal hysterectomy (2001), Left cataract surgery (2021)  
+- No significant family history  
+- Social: Never smoker, no alcohol; retired school teacher; lives with daughter; independent at baseline  
+
+**Allergies**  
+- Benzylpenicillin: Anaphylaxis (hypotension and wheeze) in 1998 – **Severe**  
+- Codeine: Nausea and vomiting – **Mild**  
+
+**Pre-Admission Medications**  
+- Levothyroxine 75 mcg oral once daily before breakfast (hypothyroidism)  
+- Lisinopril 10 mg oral once daily (hypertension)  
+
+**Initial Examination (2025-09-18)**  
+- Temperature: 38.9 °C | Heart rate: 118 bpm | BP: 82/48 mmHg (MAP 59 mmHg)  
+- Respiratory rate: 30 breaths/min | SpO₂: 88% on room air  
+- GCS 14 (E4 V4 M6) with acute confusion  
+- Bronchial breathing and coarse crackles right lower zone; dullness to percussion right base  
+- Cool peripheries, capillary refill 4 seconds; no neck stiffness, no rash; abdomen soft, non-tender  
+
+**Important Investigations**  
+*Laboratory (key trends)*  
+- WBC 19.6 ×10⁹/L, CRP 286 mg/L, Procalcitonin 12.4 ng/mL (all markedly elevated)  
+- Lactate 4.2 mmol/L (2025-09-18) → 1.6 mmol/L (2025-09-19, cleared)  
+- Creatinine 1.9 mg/dL (admission) → peak 2.1 mg/dL (2025-09-19, KDIGO stage 2, 2.6× baseline) → 1.1 mg/dL (2025-09-25, improving toward baseline)  
+- Na⁺ 133 mmol/L (mild hyponatraemia), K⁺ 4.6 mmol/L, Hb 12.1 g/dL, Platelets 142 ×10⁹/L  
+- Arterial pH 7.31 (metabolic acidosis)  
+- TSH 3.2 mIU/L (normal)  
+
+*Imaging*  
+- CXR (2025-09-18): Dense right lower lobe consolidation with air bronchograms; no effusion/pneumothorax.  
+- Renal US (2025-09-19): Normal kidneys, no hydronephrosis.  
+- CXR (2025-09-24): Partial resolution of right lower lobe consolidation.  
+
+*Microbiology*  
+- Blood cultures ×2 (2025-09-18): *Streptococcus pneumoniae* in both sets, susceptible to levofloxacin.  
+- Urinary pneumococcal antigen: Positive.  
+- Influenza A/B & SARS-CoV-2 PCR: Negative.  
+- Repeat blood cultures (2025-09-20): No growth (final report 2025-09-25).  
+
+**Diagnoses**  
+1. **Primary:** Severe community-acquired pneumonia of the right lower lobe due to *Streptococcus pneumoniae* with bacteraemia, complicated by septic shock – **resolved**.  
+2. **Secondary:** Acute kidney injury, KDIGO stage 2, sepsis-associated – **recovering** (creatinine 1.1 mg/dL on 2025-09-25; baseline 0.8 mg/dL).  
+*Excluded differentials:* Influenza/COVID-19 pneumonia (negative PCR); obstructive uropathy (negative renal ultrasound).  
+
+**Hospital Course**  
+- **2025-09-18:** Sepsis bundle initiated – blood cultures, Ringer’s lactate 30 mL/kg bolus, IV levofloxacin 750 mg (first dose 22:10), high-flow nasal oxygen (FiO₂ 0.45, 40 L/min). Persistent hypotension post-fluid; SpO₂ improved to 94%. Admitted to ICU; right internal jugular CVC inserted; norepinephrine infusion started (target MAP ≥65 mmHg).  
+- **2025-09-19:** AKI managed with fluid balance, lisinopril withheld; renal ultrasound showed no obstruction. Creatinine peaked at 2.1 mg/dL; lactate normalised.  
+- **2025-09-20:** Norepinephrine weaned off at 14:00; haemodynamic recovery with MAP >70 mmHg.  
+- **2025-09-21:** Transferred to medical ward; CVC removed. Confusion resolved (GCS 15); afebrile from this date.  
+- **2025-09-22:** Levofloxacin switched from IV to oral (same dose/interval).  
+- **2025-09-23:** Supplemental oxygen discontinued (SpO₂ 95% on room air).  
+- **2025-09-25:** Levofloxacin 7-day course completed. Repeat blood cultures finalised negative; creatinine 1.1 mg/dL.  
+
+**Procedures**  
+- Ultrasound-guided right internal jugular central venous catheter insertion (2025-09-18) for vasopressor administration. Tip at cavoatrial junction; removed 2025-09-21. No complications (no pneumothorax).  
+
+**Treatment & Medications During Hospitalization**  
+- Ringer’s lactate 1860 mL IV bolus (2025-09-18)  
+- Levofloxacin 750 mg IV every 48 hours (renally adjusted) on 2025-09-18 & 2025-09-20; switched to oral 750 mg every 48 hours on 2025-09-22 & 2025-09-24 (course completed 2025-09-25)  
+- Norepinephrine 0.05–0.18 mcg/kg/min IV infusion (2025-09-18 to 2025-09-20) – weaned off  
+- Paracetamol 1 g oral q6h PRN (max 3 g/24h) – started 2025-09-18, continued at discharge  
+- Heparin 5000 units SC q8h (2025-09-19 to 2025-09-26) – VTE prophylaxis, stopped at discharge  
+- Levothyroxine 75 mcg oral daily – continued from 2025-09-19 (home dose taken morning of admission)  
+
+**Clinical Condition at Discharge**  
+Stable and improved. Afebrile since 2025-09-21; SpO₂ 95% on room air; back to independent mobility; eating normally.  
+Discharge Vitals: Temp 36.8 °C, HR 84 bpm, BP 138/82 mmHg, RR 18 breaths/min, SpO₂ 95% on room air.  
+
+**Discharge Medications**  
+1. **Levothyroxine** 75 mcg oral once daily before breakfast – ongoing (unchanged). Take on empty stomach.  
+2. **Paracetamol** 1 g oral every 6 hours as needed – for 7 days. Maximum 3 g in 24 hours.  
+
+**Discontinued Medication**  
+- **Lisinopril** – withheld from admission (2025-09-18) due to septic shock and AKI. Blood pressure controlled without it. **Do not restart** until advised by primary care physician after renal function review.  
+
+**Follow-Up Instructions**  
+1. **Primary Care Physician** – 2025-10-01: Renal function, electrolytes, and blood pressure review. Blood test for creatinine and electrolytes before visit; decide on restarting lisinopril; discuss pneumococcal and influenza vaccination.  
+2. **General Medicine / Pulmonology Clinic** – 2025-11-06: Repeat chest X-ray (6 weeks post-discharge) to confirm radiological resolution of right lower lobe consolidation.  
+
+**Important Patient Instructions**  
+- **Diet:** Normal diet; drink 1.5–2 L fluid daily unless otherwise advised.  
+- **Activity:** Gradually increase activity; rest as needed; supervised walking for the first week.  
+- **Wound Care:** Right neck central line site – keep dressing dry for 48 hours; seek review if red or discharging.  
+- **Warning Signs – Seek Urgent Medical Attention If:**  
+  - Recurrent fever  
+  - Worsening cough or breathlessness  
+  - New confusion or drowsiness  
+  - Reduced urine output  
+  - Dizziness or fainting  
+  - Chest pain  
+- **Other:**  
+  - **Do not take lisinopril** until advised by your primary care physician.  
+  - Avoid NSAIDs (e.g., ibuprofen) until kidney function is confirmed normal.  
+  - **Severe penicillin allergy (anaphylaxis):** Inform all healthcare providers.  
+
+**Prepared by:** Medical Documentation Assistant  
+**Date:** 2025-09-26

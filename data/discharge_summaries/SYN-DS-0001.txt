@@ -1,0 +1,95 @@
+**DISCHARGE SUMMARY**
+
+**Patient Details**  
+Name: [Redacted]  
+Age: 24 years | Sex: Male  
+Blood Group: O positive  
+Occupation: Software support engineer  
+
+**Admission Details**  
+Admission Date: 12 March 2025, 02:40  
+Admission Type: Emergency  
+Referring Specialty: General Surgery  
+
+**Reason for Admission**  
+Suspected acute appendicitis – 18 hours of right lower quadrant abdominal pain with nausea.  
+Initial condition: Stable but febrile (38.1 °C) and tachycardic (104 bpm), moderate pain 7/10.
+
+**Relevant Medical History**  
+- Seasonal allergic rhinitis (diagnosed 2019)  
+- No previous surgeries  
+- Father: essential hypertension; no family history of inflammatory bowel disease or colorectal cancer  
+- Social: Never smoker; occasional alcohol (~2 units/week)  
+
+**Allergies**  
+No known drug allergies.
+
+**Pre‑admission Medications**  
+- Cetirizine 10 mg oral once daily (for seasonal allergic rhinitis)
+
+**Examination Findings on Admission**  
+- Temperature 38.1 °C, HR 104 bpm, BP 128/78 mmHg, RR 18/min, SpO₂ 98% on room air  
+- Abdominal: Tenderness at McBurney’s point; rebound tenderness in right lower quadrant; positive Rovsing’s sign; voluntary guarding localised to right lower quadrant; no generalised rigidity; no palpable mass; no costovertebral angle tenderness.
+
+**Important Investigations**  
+*Laboratory (12 March 2025)*  
+- WBC 14.8 ×10⁹/L (high), Neutrophils 82% (high)  
+- CRP 48 mg/L (high)  
+- Hb 14.6 g/dL, Platelets 265 ×10⁹/L, Creatinine 0.9 mg/dL, Na⁺ 138 mmol/L, K⁺ 4.1 mmol/L – all normal  
+- Lipase 32 U/L (normal; pancreatitis unlikely)  
+- Total bilirubin 0.8 mg/dL (normal)  
+
+*Imaging*  
+CT abdomen and pelvis with IV contrast (12 March 2025): Appendix dilated to 11 mm with wall thickening and periappendiceal fat stranding; 6 mm appendicolith at base; no extraluminal air or fluid collection; kidneys and ureters normal. **Impression: Acute appendicitis with appendicolith, without perforation or abscess.**
+
+*Other*  
+Urinalysis: No leukocytes, nitrites or blood (urinary cause unlikely).
+
+*Post‑operative (13 March 2025)*  
+WBC 10.9 ×10⁹/L (normalised from 14.8).
+
+**Diagnoses**  
+**Primary:** Acute appendicitis with appendicolith, non‑perforated.  
+**Differentials considered and excluded:** Mesenteric adenitis (excluded by CT), right ureteric colic (excluded by normal urinalysis and CT), acute pancreatitis (excluded by normal lipase).
+
+**Hospital Course**  
+- **12 March:** Kept nil by mouth; IV fluids (0.9% NaCl 125 mL/h), IV paracetamol 1 g q6h, IV ondansetron 4 mg q8h PRN started. Pain reduced from 7/10 to 4/10. Single pre‑operative doses of IV ceftriaxone 2 g and IV metronidazole 500 mg given for surgical prophylaxis (completed before incision; no post‑operative antibiotics prescribed). Laparoscopic appendectomy performed – acutely inflamed, non‑perforated appendix with appendicolith removed without complications; no pus or peritoneal contamination; specimen sent for histopathology (result pending at discharge). Post‑operatively stable: pain 3/10, HR 88 bpm, no nausea.  
+- **13 March:** Oral soft diet tolerated; IV fluids stopped; IV paracetamol switched to oral paracetamol 1 g q6h PRN; oral ibuprofen 400 mg q8h with food started; cetirizine 10 mg daily resumed. Surgical review: afebrile (36.9 °C), port sites clean and dry, mobilising independently, passing flatus. Pain 2/10 on oral analgesia. Fit for discharge.
+
+**Procedures**  
+- **Laparoscopic appendectomy (12 March 2025)** – Indication: CT‑confirmed acute appendicitis with appendicolith. Result: Inflamed non‑perforated appendix with appendicolith removed; no complications; specimen sent for histopathology (pending).
+
+**Treatment and Medications During Hospitalisation**  
+- IV fluids (0.9% NaCl 125 mL/h) – stopped 13 March once tolerating oral intake.  
+- IV ceftriaxone 2 g single pre‑operative dose.  
+- IV metronidazole 500 mg single pre‑operative dose.  
+- IV paracetamol 1 g q6h – switched to oral on 13 March.  
+- IV ondansetron 4 mg q8h PRN (one dose given 12 March) – stopped.  
+- Oral paracetamol 1 g q6h PRN started 13 March.  
+- Oral ibuprofen 400 mg q8h with food started 13 March.  
+- Cetirizine 10 mg daily (held 12 March, resumed 13 March).
+
+**Clinical Condition at Discharge (13 March 2025)**  
+Stable and improved; afebrile, tolerating diet, pain controlled on oral analgesia, mobilising independently.  
+Vital signs: Temp 36.9 °C, HR 78 bpm, BP 122/76 mmHg, RR 16/min, SpO₂ 99% on room air.  
+**Final Diagnosis:** Acute appendicitis with appendicolith, non‑perforated, status post laparoscopic appendectomy (12 March 2025).
+
+**Discharge Medications**  
+1. **Paracetamol** 1000 mg oral every 6 hours as needed for 5 days (max 4 g/24 h) – for post‑operative pain.  
+2. **Ibuprofen** 400 mg oral every 8 hours with food for 3 days – for post‑operative pain; take with food, stop and seek advice if stomach pain or black stools.  
+3. **Cetirizine** 10 mg oral once daily – ongoing long‑term for seasonal allergic rhinitis (unchanged).
+
+**Follow‑up**  
+General Surgery Outpatient Clinic – 24 March 2025.  
+Reason: Wound review and histopathology result review.  
+Instructions: Bring discharge summary; no suture removal needed (absorbable sutures).
+
+**Patient Instructions**  
+- **Diet:** Light diet for 2 days, then normal diet as tolerated; maintain good oral fluid intake.  
+- **Activity:** Walk daily; no lifting >5 kg or strenuous exercise for 2 weeks; may return to desk work after 1 week; no driving until able to brake suddenly without pain.  
+- **Wound Care:** Keep waterproof dressings on the three port sites for 48 hours; may shower after 48 hours and pat dry; absorbable sutures do not require removal.  
+- **Warning Signs – seek urgent medical attention if:** Fever >38 °C; increasing abdominal pain or swelling; persistent vomiting; redness, swelling or discharge from port sites; black stools or vomiting blood.  
+- **Other:** Histopathology result pending at discharge; will be reviewed at surgical clinic on 24 March 2025.
+
+**Prepared by:** [Clinician Name], General Surgery  
+**Date of Summary:** 13 March 2025
