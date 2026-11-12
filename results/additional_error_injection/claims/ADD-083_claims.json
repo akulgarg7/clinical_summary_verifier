@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-083_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C035",
+      "category": "Laboratory Result",
+      "subject": "Platelets",
+      "relation": "is",
+      "value": "265",
+      "unit": "mg/L",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "12 March 2025",
+      "negated": false,
+      "source_text": "Platelets 265 mg/L"
+    }
+  ]
+}

@@ -3,12 +3,13 @@
     "error_id": "E001",
     "case_id": "SYN-DS-0006",
     "error_type": "medication_dose",
-    "fact_id": "SYN-DS-0006-F139",
+    "fact_id": "SYN-DS-0006-F112",
     "original_value": "10 mg",
     "incorrect_value": "20 mg",
     "expected_verdict": "CONTRADICTED",
     "expected_severity": "HIGH",
-    "output_file": "data\\error_injected\\SYN-DS-0006_E001.txt"
+    "output_file": "data\\error_injected\\SYN-DS-0006_E001.txt",
+    "audit_note": "Corrected during end-to-end audit: the 20 mg mutation appears in the 2025-11-04 inpatient/hospital-course statement, whose source fact is SYN-DS-0006-F112. The discharge medication entry SYN-DS-0006-F139 remains 10 mg and was not the altered occurrence."
   },
   {
     "error_id": "E002",

@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-074_SYN-DS-0003.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C043",
+      "category": "laboratory",
+      "subject": "Creatinine",
+      "relation": "has_value",
+      "value": "2.1",
+      "unit": "mg/dL",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "admission",
+      "negated": false,
+      "source_text": "Creatinine 2.1 mg/dL (admission)"
+    }
+  ]
+}

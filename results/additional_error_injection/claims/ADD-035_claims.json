@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-035_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C083",
+      "category": "Medication",
+      "subject": "ondansetron",
+      "relation": "administered",
+      "value": "4",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "q8h PRN",
+      "duration": "",
+      "date_time": "12 March",
+      "negated": false,
+      "source_text": "oral ondansetron 4 mg q8h PRN (one dose given 12 March) – stopped."
+    }
+  ]
+}

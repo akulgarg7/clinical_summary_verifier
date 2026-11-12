@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-076_SYN-DS-0003.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C045",
+      "category": "laboratory",
+      "subject": "Creatinine",
+      "relation": "has_value",
+      "value": "1.9",
+      "unit": "mg/dL",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2025-09-25",
+      "negated": false,
+      "source_text": "1.9 mg/dL (2025-09-25, improving toward baseline)"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-081_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C033",
+      "category": "Laboratory Result",
+      "subject": "CRP",
+      "relation": "is",
+      "value": "48",
+      "unit": "g/L",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "12 March 2025",
+      "negated": false,
+      "source_text": "CRP 48 g/L (high)"
+    }
+  ]
+}

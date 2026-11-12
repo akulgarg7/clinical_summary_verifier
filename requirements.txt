@@ -3,3 +3,4 @@ pydantic
 pandas
 python-dotenv
 streamlit
+markdown-it-py>=3.0

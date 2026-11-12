@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-054_SYN-DS-0007.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C086",
+      "category": "procedure",
+      "subject": "Transfusion of 2 units packed red cells",
+      "relation": "performed",
+      "value": "2026-05-21",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2026-05-21",
+      "negated": false,
+      "source_text": "Transfusion of 2 units packed red cells (2026-05-21) – Hb rose to 8.9 g/dL; no reaction."
+    }
+  ]
+}

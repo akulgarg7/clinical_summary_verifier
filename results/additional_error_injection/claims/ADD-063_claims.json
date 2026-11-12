@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-063_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C069",
+      "category": "Medication",
+      "subject": "ibuprofen",
+      "relation": "started",
+      "value": "480",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "q12h with food",
+      "duration": "",
+      "date_time": "13 March",
+      "negated": false,
+      "source_text": "oral ibuprofen 480 mg q12h with food started;"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-072_SYN-DS-0002.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C051",
+      "category": "investigation",
+      "subject": "Creatinine",
+      "relation": "is",
+      "value": "1.1",
+      "unit": "mg/dL",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "admission",
+      "negated": false,
+      "source_text": "Creatinine 1.1 mg/dL (admission), 1.1 mg/dL (post-contrast, 2025-06-05) – no acute kidney injury."
+    }
+  ]
+}

@@ -1,0 +1,1960 @@
+
+======================================================================
+FILE: SYN-DS-0006_E001_claims.json
+TOTAL CLAIMS: 118
+MEDICATION CLAIMS: 21
+
+------------------------------------------------------------
+CLAIM ID: C021
+SUBJECT: Losartan
+CATEGORY: medication
+RELATION: taken_on_admission
+VALUE: 50 mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily (hypertension)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 20
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "50",
+    "source_value": "50",
+    "matched_fact_id": "SYN-DS-0006-F026",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F027",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F028",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F026', 'SYN-DS-0006-F027', 'SYN-DS-0006-F028']
+TOP 5 CANDIDATES:
+  score=15.0 id=SYN-DS-0006-F026 subject=Losartan (pre-admission) relation=dose value=50 section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F027 subject=Losartan (pre-admission) relation=route value=oral section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F028 subject=Losartan (pre-admission) relation=frequency value=once daily section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F029 subject=Losartan (pre-admission) relation=indication value=Essential hypertension section=medications_before_admission
+  score=9.0 id=SYN-DS-0006-F125 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=indication value=Hypertension; withheld on the morning of surgery (2025-11-03) section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C022
+SUBJECT: Paracetamol
+CATEGORY: medication
+RELATION: taken_on_admission
+VALUE: 1 g
+FREQUENCY: every 8 hours as needed
+SOURCE TEXT: Paracetamol 1 g oral every 8 hours as needed (knee pain)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 19
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F030",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F031",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 8 hours as needed",
+    "source_value": "every 8 hours as needed",
+    "matched_fact_id": "SYN-DS-0006-F032",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F030', 'SYN-DS-0006-F031', 'SYN-DS-0006-F032']
+TOP 5 CANDIDATES:
+  score=15.0 id=SYN-DS-0006-F030 subject=Paracetamol (pre-admission) relation=dose value=1 section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F031 subject=Paracetamol (pre-admission) relation=route value=oral section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F032 subject=Paracetamol (pre-admission) relation=frequency value=every 8 hours as needed section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F033 subject=Paracetamol (pre-admission) relation=indication value=Knee osteoarthritis pain section=medications_before_admission
+  score=9.0 id=SYN-DS-0006-F098 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C023
+SUBJECT: Meloxicam
+CATEGORY: medication
+RELATION: taken_on_admission
+VALUE: 7.5 mg
+FREQUENCY: once daily
+SOURCE TEXT: Meloxicam 7.5 mg oral once daily (knee pain) – stopped 2025-10-27 per pre-operative instructions
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "7.5",
+    "source_value": "7.5",
+    "matched_fact_id": "SYN-DS-0006-F022",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F023",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F024",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F022', 'SYN-DS-0006-F023', 'SYN-DS-0006-F024']
+TOP 5 CANDIDATES:
+  score=18.0 id=SYN-DS-0006-F025 subject=Meloxicam (pre-admission) relation=indication value=Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F022 subject=Meloxicam (pre-admission) relation=dose value=7.5 section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F023 subject=Meloxicam (pre-admission) relation=route value=oral section=medications_before_admission
+  score=15.0 id=SYN-DS-0006-F024 subject=Meloxicam (pre-admission) relation=frequency value=once daily section=medications_before_admission
+  score=10.0 id=SYN-DS-0006-F171 subject=Meloxicam (discontinued) relation=discontinuation reason value=Stopped before surgery per pre-operative instructions; not restarted because of bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review section=discontinued_medications
+
+------------------------------------------------------------
+CLAIM ID: C024
+SUBJECT: Meloxicam
+CATEGORY: medication
+RELATION: stopped
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: stopped 2025-10-27 per pre-operative instructions
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "status": {
+    "claim_value": "stopped",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "status",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=14.0 id=SYN-DS-0006-F171 subject=Meloxicam (discontinued) relation=discontinuation reason value=Stopped before surgery per pre-operative instructions; not restarted because of bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review section=discontinued_medications
+  score=13.0 id=SYN-DS-0006-F172 subject=Meloxicam (discontinued) relation=discontinued on value=2025-10-27 section=discontinued_medications
+  score=11.0 id=SYN-DS-0006-F025 subject=Meloxicam (pre-admission) relation=indication value=Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F022 subject=Meloxicam (pre-admission) relation=dose value=7.5 section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F023 subject=Meloxicam (pre-admission) relation=route value=oral section=medications_before_admission
+
+------------------------------------------------------------
+CLAIM ID: C058
+SUBJECT: losartan
+CATEGORY: medication
+RELATION: withheld
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: losartan withheld morning of surgery.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 20
+FIELD RESULTS:
+{}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=11.0 id=SYN-DS-0006-F125 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=indication value=Hypertension; withheld on the morning of surgery (2025-11-03) section=medications_during_hospitalization
+  score=8.5 id=SYN-DS-0006-F068 subject=Hospital course event relation=action value=Admitted for surgery; losartan withheld on the morning of surgery section=hospital_course
+  score=7.0 id=SYN-DS-0006-F026 subject=Losartan (pre-admission) relation=dose value=50 section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F027 subject=Losartan (pre-admission) relation=route value=oral section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F028 subject=Losartan (pre-admission) relation=frequency value=once daily section=medications_before_admission
+
+------------------------------------------------------------
+CLAIM ID: C060
+SUBJECT: cefazolin
+CATEGORY: medication
+RELATION: administered
+VALUE:  
+FREQUENCY: prophylaxis
+SOURCE TEXT: IV cefazolin prophylaxis
+VERDICT: PARTIALLY_SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 9
+FIELD RESULTS:
+{
+  "route": {
+    "claim_value": "IV",
+    "source_value": "intravenous",
+    "matched_fact_id": "SYN-DS-0006-F085",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "prophylaxis",
+    "source_value": "every 8 hours (3 doses: pre-incision and 2 post-operative)",
+    "matched_fact_id": "SYN-DS-0006-F086",
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F085', 'SYN-DS-0006-F086']
+TOP 5 CANDIDATES:
+  score=10.0 id=SYN-DS-0006-F084 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=dose value=2 section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F085 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F086 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=frequency value=every 8 hours (3 doses: pre-incision and 2 post-operative) section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F087 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F088 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C061
+SUBJECT: tranexamic acid
+CATEGORY: medication
+RELATION: administered
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: IV tranexamic acid given.
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "route": {
+    "claim_value": "IV",
+    "source_value": "intravenous",
+    "matched_fact_id": "SYN-DS-0006-F092",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F092']
+TOP 5 CANDIDATES:
+  score=10.0 id=SYN-DS-0006-F091 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F092 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F093 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=frequency value=once at incision section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F094 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F095 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C065
+SUBJECT: Rivaroxaban
+CATEGORY: medication
+RELATION: started
+VALUE: 20 mg
+FREQUENCY: daily
+SOURCE TEXT: Rivaroxaban 20 mg daily started for VTE prophylaxis
+VERDICT: CONTRADICTED
+ERROR TYPE: dose_mismatch
+CANDIDATES: 16
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "20",
+    "source_value": "10",
+    "matched_fact_id": "SYN-DS-0006-F112",
+    "verdict": "CONTRADICTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F114",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F112', 'SYN-DS-0006-F114']
+TOP 5 CANDIDATES:
+  score=14.0 id=SYN-DS-0006-F115 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=status value=started section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F143 subject=Rivaroxaban (discharge, 10 mg once daily) relation=status relative to pre-admission regimen value=started section=discharge_medications
+  score=13.0 id=SYN-DS-0006-F112 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=dose value=10 section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F113 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F114 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C066
+SUBJECT: cefazolin
+CATEGORY: medication
+RELATION: completed
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: cefazolin course completed (24-hour prophylaxis)
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 9
+FIELD RESULTS:
+{
+  "duration": {
+    "claim_value": "24-hour prophylaxis",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=14.0 id=SYN-DS-0006-F087 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F084 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=dose value=2 section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F085 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F086 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=frequency value=every 8 hours (3 doses: pre-incision and 2 post-operative) section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F088 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C067
+SUBJECT: losartan
+CATEGORY: medication
+RELATION: resumed
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: losartan resumed.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 20
+FIELD RESULTS:
+{}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=13.0 id=SYN-DS-0006-F119 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=dose value=50 section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F120 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F121 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F122 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=status value=continued section=medications_during_hospitalization
+  score=13.0 id=SYN-DS-0006-F123 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=start date value=2025-11-04 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C082
+SUBJECT: Cefazolin
+CATEGORY: medication
+RELATION: administered
+VALUE: 2 g
+FREQUENCY: every 8 hours
+SOURCE TEXT: Cefazolin 2 g IV every 8 hours ×3 doses (pre-incision + 2 post-op) – completed 2025-11-04 (24-hour prophylaxis)
+VERDICT: PARTIALLY_SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 9
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "2",
+    "source_value": "2",
+    "matched_fact_id": "SYN-DS-0006-F084",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "IV",
+    "source_value": "intravenous",
+    "matched_fact_id": "SYN-DS-0006-F085",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 8 hours",
+    "source_value": "every 8 hours (3 doses: pre-incision and 2 post-operative)",
+    "matched_fact_id": "SYN-DS-0006-F086",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "×3 doses (pre-incision + 2 post-op)",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F084', 'SYN-DS-0006-F085', 'SYN-DS-0006-F086']
+TOP 5 CANDIDATES:
+  score=10.0 id=SYN-DS-0006-F084 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=dose value=2 section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F085 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F086 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=frequency value=every 8 hours (3 doses: pre-incision and 2 post-operative) section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F087 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F088 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C083
+SUBJECT: Tranexamic acid
+CATEGORY: medication
+RELATION: administered
+VALUE: 1 g
+FREQUENCY: once at incision
+SOURCE TEXT: Tranexamic acid 1 g IV once at incision – completed
+VERDICT: PARTIALLY_SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F091",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "IV",
+    "source_value": "intravenous",
+    "matched_fact_id": "SYN-DS-0006-F092",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once at incision",
+    "source_value": "once at incision",
+    "matched_fact_id": "SYN-DS-0006-F093",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "completed",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F091', 'SYN-DS-0006-F092', 'SYN-DS-0006-F093']
+TOP 5 CANDIDATES:
+  score=7.0 id=SYN-DS-0006-F091 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F092 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F093 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=frequency value=once at incision section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F094 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F095 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C084
+SUBJECT: Paracetamol
+CATEGORY: medication
+RELATION: administered
+VALUE: 1 g
+FREQUENCY: every 6 hours regular
+SOURCE TEXT: Paracetamol 1 g oral every 6 hours regular (changed from home PRN regimen)
+VERDICT: PARTIALLY_SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 19
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F030",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F031",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 6 hours regular",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": true,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F030', 'SYN-DS-0006-F031']
+TOP 5 CANDIDATES:
+  score=7.0 id=SYN-DS-0006-F030 subject=Paracetamol (pre-admission) relation=dose value=1 section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F031 subject=Paracetamol (pre-admission) relation=route value=oral section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F032 subject=Paracetamol (pre-admission) relation=frequency value=every 8 hours as needed section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F033 subject=Paracetamol (pre-admission) relation=indication value=Knee osteoarthritis pain section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F098 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C085
+SUBJECT: Oxycodone
+CATEGORY: medication
+RELATION: administered
+VALUE: 5 mg
+FREQUENCY: every 4 hours PRN (max 4 doses/24h)
+SOURCE TEXT: Oxycodone 5 mg oral every 4 hours PRN (max 4 doses/24h) – started for moderate-severe pain; morphine avoided due to intolerance
+VERDICT: PARTIALLY_SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 15
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "5",
+    "source_value": "5",
+    "matched_fact_id": "SYN-DS-0006-F105",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F106",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 4 hours PRN (max 4 doses/24h)",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": true,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F105', 'SYN-DS-0006-F106']
+TOP 5 CANDIDATES:
+  score=7.0 id=SYN-DS-0006-F105 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=dose value=5 section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F106 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=route value=oral section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F107 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=frequency value=every 4 hours as needed (maximum 4 doses in 24 hours) section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F108 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=status value=started section=medications_during_hospitalization
+  score=7.0 id=SYN-DS-0006-F109 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C086
+SUBJECT: Rivaroxaban
+CATEGORY: medication
+RELATION: administered
+VALUE: 10 mg
+FREQUENCY: once daily
+SOURCE TEXT: Rivaroxaban 10 mg oral once daily – started 2025-11-04 for VTE prophylaxis
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 16
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "10",
+    "source_value": "10",
+    "matched_fact_id": "SYN-DS-0006-F112",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F113",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F114",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F112', 'SYN-DS-0006-F113', 'SYN-DS-0006-F114']
+TOP 5 CANDIDATES:
+  score=10.0 id=SYN-DS-0006-F112 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=dose value=10 section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F113 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F114 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F115 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=status value=started section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F116 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=start date value=2025-11-04 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C087
+SUBJECT: Losartan
+CATEGORY: medication
+RELATION: administered
+VALUE: 50 mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily – resumed 2025-11-04 (withheld morning of surgery)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 20
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "50",
+    "source_value": "50",
+    "matched_fact_id": "SYN-DS-0006-F119",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F120",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F121",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F119', 'SYN-DS-0006-F120', 'SYN-DS-0006-F121']
+TOP 5 CANDIDATES:
+  score=10.0 id=SYN-DS-0006-F119 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=dose value=50 section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F120 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F121 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F122 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=status value=continued section=medications_during_hospitalization
+  score=10.0 id=SYN-DS-0006-F123 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=start date value=2025-11-04 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C100
+SUBJECT: Rivaroxaban
+CATEGORY: medication
+RELATION: prescribed_at_discharge
+VALUE: 10 mg
+FREQUENCY: once daily
+SOURCE TEXT: Rivaroxaban 10 mg oral once daily – until 2025-11-17 inclusive (14 days total).
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 15
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "10",
+    "source_value": "10",
+    "matched_fact_id": "SYN-DS-0006-F139",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F140",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F141",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "until 2025-11-17 inclusive (14 days total)",
+    "source_value": "Until 2025-11-17 inclusive (14 days total)",
+    "matched_fact_id": "SYN-DS-0006-F142",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F139', 'SYN-DS-0006-F140', 'SYN-DS-0006-F141', 'SYN-DS-0006-F142']
+TOP 5 CANDIDATES:
+  score=21.0 id=SYN-DS-0006-F139 subject=Rivaroxaban (discharge, 10 mg once daily) relation=dose value=10 section=discharge_medications
+  score=21.0 id=SYN-DS-0006-F140 subject=Rivaroxaban (discharge, 10 mg once daily) relation=route value=oral section=discharge_medications
+  score=21.0 id=SYN-DS-0006-F141 subject=Rivaroxaban (discharge, 10 mg once daily) relation=frequency value=once daily section=discharge_medications
+  score=21.0 id=SYN-DS-0006-F142 subject=Rivaroxaban (discharge, 10 mg once daily) relation=duration value=Until 2025-11-17 inclusive (14 days total) section=discharge_medications
+  score=21.0 id=SYN-DS-0006-F143 subject=Rivaroxaban (discharge, 10 mg once daily) relation=status relative to pre-admission regimen value=started section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C101
+SUBJECT: Paracetamol
+CATEGORY: medication
+RELATION: prescribed_at_discharge
+VALUE: 1 g
+FREQUENCY: every 6 hours regular
+SOURCE TEXT: Paracetamol 1 g oral every 6 hours regular – for 2 weeks, then as needed.
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 12
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F147",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F148",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 6 hours regular",
+    "source_value": "every 6 hours (regular)",
+    "matched_fact_id": "SYN-DS-0006-F149",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "for 2 weeks, then as needed",
+    "source_value": "2 weeks, then as needed",
+    "matched_fact_id": "SYN-DS-0006-F150",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F147', 'SYN-DS-0006-F148', 'SYN-DS-0006-F149', 'SYN-DS-0006-F150']
+TOP 5 CANDIDATES:
+  score=16.0 id=SYN-DS-0006-F147 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=dose value=1 section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F148 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=route value=oral section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F149 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=frequency value=every 6 hours (regular) section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F150 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=duration value=2 weeks, then as needed section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F151 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=status relative to pre-admission regimen value=dose_changed section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C102
+SUBJECT: Oxycodone
+CATEGORY: medication
+RELATION: prescribed_at_discharge
+VALUE: 5 mg
+FREQUENCY: every 4 hours PRN for severe pain
+SOURCE TEXT: Oxycodone 5 mg oral every 4 hours PRN for severe pain – 5 days (20 tablets).
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "5",
+    "source_value": "5",
+    "matched_fact_id": "SYN-DS-0006-F155",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F156",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 4 hours PRN for severe pain",
+    "source_value": "every 4 hours as needed for severe pain",
+    "matched_fact_id": "SYN-DS-0006-F157",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "5 days (20 tablets)",
+    "source_value": "5 days (20 tablets)",
+    "matched_fact_id": "SYN-DS-0006-F158",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F155', 'SYN-DS-0006-F156', 'SYN-DS-0006-F157', 'SYN-DS-0006-F158']
+TOP 5 CANDIDATES:
+  score=16.0 id=SYN-DS-0006-F155 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=dose value=5 section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F156 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=route value=oral section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F157 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=frequency value=every 4 hours as needed for severe pain section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F158 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=duration value=5 days (20 tablets) section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F159 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=status relative to pre-admission regimen value=started section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C103
+SUBJECT: Losartan
+CATEGORY: medication
+RELATION: prescribed_at_discharge
+VALUE: 50 mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily – ongoing, unchanged home medication.
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 18
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "50",
+    "source_value": "50",
+    "matched_fact_id": "SYN-DS-0006-F163",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F164",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F165",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "ongoing",
+    "source_value": "Ongoing",
+    "matched_fact_id": "SYN-DS-0006-F166",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F163', 'SYN-DS-0006-F164', 'SYN-DS-0006-F165', 'SYN-DS-0006-F166']
+TOP 5 CANDIDATES:
+  score=18.0 id=SYN-DS-0006-F163 subject=Losartan (discharge, 50 mg once daily) relation=dose value=50 section=discharge_medications
+  score=18.0 id=SYN-DS-0006-F164 subject=Losartan (discharge, 50 mg once daily) relation=route value=oral section=discharge_medications
+  score=18.0 id=SYN-DS-0006-F165 subject=Losartan (discharge, 50 mg once daily) relation=frequency value=once daily section=discharge_medications
+  score=18.0 id=SYN-DS-0006-F166 subject=Losartan (discharge, 50 mg once daily) relation=duration value=Ongoing section=discharge_medications
+  score=18.0 id=SYN-DS-0006-F167 subject=Losartan (discharge, 50 mg once daily) relation=status relative to pre-admission regimen value=continued section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C104
+SUBJECT: Meloxicam
+CATEGORY: medication
+RELATION: discontinued
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: Meloxicam – stopped 2025-10-27 per pre-operative instructions; not restarted due to bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "status": {
+    "claim_value": "discontinued",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "status",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=14.0 id=SYN-DS-0006-F171 subject=Meloxicam (discontinued) relation=discontinuation reason value=Stopped before surgery per pre-operative instructions; not restarted because of bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review section=discontinued_medications
+  score=14.0 id=SYN-DS-0006-F172 subject=Meloxicam (discontinued) relation=discontinued on value=2025-10-27 section=discontinued_medications
+  score=10.0 id=SYN-DS-0006-F025 subject=Meloxicam (pre-admission) relation=indication value=Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F022 subject=Meloxicam (pre-admission) relation=dose value=7.5 section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F023 subject=Meloxicam (pre-admission) relation=route value=oral section=medications_before_admission
+
+======================================================================
+FILE: SYN-DS-0006_E002_claims.json
+TOTAL CLAIMS: 128
+MEDICATION CLAIMS: 22
+
+------------------------------------------------------------
+CLAIM ID: C021
+SUBJECT: Losartan
+CATEGORY: Medications on Admission
+RELATION: taken for
+VALUE: hypertension mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily (hypertension)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "indication": {
+    "claim_value": "hypertension",
+    "source_value": "Essential hypertension",
+    "matched_fact_id": "SYN-DS-0006-F029",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "indication",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F027",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F028",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F029', 'SYN-DS-0006-F027', 'SYN-DS-0006-F028']
+TOP 5 CANDIDATES:
+  score=13.0 id=SYN-DS-0006-F026 subject=Losartan (pre-admission) relation=dose value=50 section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F027 subject=Losartan (pre-admission) relation=route value=oral section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F028 subject=Losartan (pre-admission) relation=frequency value=once daily section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F029 subject=Losartan (pre-admission) relation=indication value=Essential hypertension section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F125 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=indication value=Hypertension; withheld on the morning of surgery (2025-11-03) section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C022
+SUBJECT: Losartan
+CATEGORY: Medications on Admission
+RELATION: dose
+VALUE: 50 mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily (hypertension)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "50",
+    "source_value": "50",
+    "matched_fact_id": "SYN-DS-0006-F026",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F027",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F028",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F026', 'SYN-DS-0006-F027', 'SYN-DS-0006-F028']
+TOP 5 CANDIDATES:
+  score=14.5 id=SYN-DS-0006-F026 subject=Losartan (pre-admission) relation=dose value=50 section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F027 subject=Losartan (pre-admission) relation=route value=oral section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F028 subject=Losartan (pre-admission) relation=frequency value=once daily section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F029 subject=Losartan (pre-admission) relation=indication value=Essential hypertension section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F125 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=indication value=Hypertension; withheld on the morning of surgery (2025-11-03) section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C023
+SUBJECT: Paracetamol
+CATEGORY: Medications on Admission
+RELATION: taken for
+VALUE: knee pain g
+FREQUENCY: every 8 hours as needed
+SOURCE TEXT: Paracetamol 1 g oral every 8 hours as needed (knee pain)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 19
+FIELD RESULTS:
+{
+  "indication": {
+    "claim_value": "knee pain",
+    "source_value": "Knee osteoarthritis pain",
+    "matched_fact_id": "SYN-DS-0006-F033",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "indication",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F031",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 8 hours as needed",
+    "source_value": "every 8 hours as needed",
+    "matched_fact_id": "SYN-DS-0006-F032",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F033', 'SYN-DS-0006-F031', 'SYN-DS-0006-F032']
+TOP 5 CANDIDATES:
+  score=13.0 id=SYN-DS-0006-F030 subject=Paracetamol (pre-admission) relation=dose value=1 section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F031 subject=Paracetamol (pre-admission) relation=route value=oral section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F032 subject=Paracetamol (pre-admission) relation=frequency value=every 8 hours as needed section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F033 subject=Paracetamol (pre-admission) relation=indication value=Knee osteoarthritis pain section=medications_before_admission
+  score=7.0 id=SYN-DS-0006-F098 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C024
+SUBJECT: Paracetamol
+CATEGORY: Medications on Admission
+RELATION: dose
+VALUE: 1 g
+FREQUENCY: every 8 hours as needed
+SOURCE TEXT: Paracetamol 1 g oral every 8 hours as needed (knee pain)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 19
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F030",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F031",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 8 hours as needed",
+    "source_value": "every 8 hours as needed",
+    "matched_fact_id": "SYN-DS-0006-F032",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F030', 'SYN-DS-0006-F031', 'SYN-DS-0006-F032']
+TOP 5 CANDIDATES:
+  score=14.5 id=SYN-DS-0006-F030 subject=Paracetamol (pre-admission) relation=dose value=1 section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F031 subject=Paracetamol (pre-admission) relation=route value=oral section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F032 subject=Paracetamol (pre-admission) relation=frequency value=every 8 hours as needed section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F033 subject=Paracetamol (pre-admission) relation=indication value=Knee osteoarthritis pain section=medications_before_admission
+  score=8.5 id=SYN-DS-0006-F098 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C025
+SUBJECT: Meloxicam
+CATEGORY: Medications on Admission
+RELATION: taken for
+VALUE: knee pain mg
+FREQUENCY: once daily
+SOURCE TEXT: Meloxicam 7.5 mg oral once daily (knee pain) – stopped 2025-10-27 per pre-operative instructions
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "indication": {
+    "claim_value": "knee pain",
+    "source_value": "Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions",
+    "matched_fact_id": "SYN-DS-0006-F025",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "indication",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F023",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F024",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F025', 'SYN-DS-0006-F023', 'SYN-DS-0006-F024']
+TOP 5 CANDIDATES:
+  score=16.0 id=SYN-DS-0006-F025 subject=Meloxicam (pre-admission) relation=indication value=Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F022 subject=Meloxicam (pre-admission) relation=dose value=7.5 section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F023 subject=Meloxicam (pre-admission) relation=route value=oral section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F024 subject=Meloxicam (pre-admission) relation=frequency value=once daily section=medications_before_admission
+  score=8.0 id=SYN-DS-0006-F171 subject=Meloxicam (discontinued) relation=discontinuation reason value=Stopped before surgery per pre-operative instructions; not restarted because of bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review section=discontinued_medications
+
+------------------------------------------------------------
+CLAIM ID: C026
+SUBJECT: Meloxicam
+CATEGORY: Medications on Admission
+RELATION: dose
+VALUE: 7.5 mg
+FREQUENCY: once daily
+SOURCE TEXT: Meloxicam 7.5 mg oral once daily (knee pain) – stopped 2025-10-27 per pre-operative instructions
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "7.5",
+    "source_value": "7.5",
+    "matched_fact_id": "SYN-DS-0006-F022",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F023",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F024",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F022', 'SYN-DS-0006-F023', 'SYN-DS-0006-F024']
+TOP 5 CANDIDATES:
+  score=16.0 id=SYN-DS-0006-F025 subject=Meloxicam (pre-admission) relation=indication value=Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions section=medications_before_admission
+  score=14.5 id=SYN-DS-0006-F022 subject=Meloxicam (pre-admission) relation=dose value=7.5 section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F023 subject=Meloxicam (pre-admission) relation=route value=oral section=medications_before_admission
+  score=13.0 id=SYN-DS-0006-F024 subject=Meloxicam (pre-admission) relation=frequency value=once daily section=medications_before_admission
+  score=8.0 id=SYN-DS-0006-F171 subject=Meloxicam (discontinued) relation=discontinuation reason value=Stopped before surgery per pre-operative instructions; not restarted because of bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review section=discontinued_medications
+
+------------------------------------------------------------
+CLAIM ID: C065
+SUBJECT: Cefazolin prophylaxis
+CATEGORY: Hospital Course
+RELATION: route
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: IV cefazolin prophylaxis and IV tranexamic acid given.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F070 subject=Hospital course event relation=action value=Right total knee arthroplasty under spinal anaesthesia with adductor canal block; IV cefazolin prophylaxis and IV tranexamic acid section=hospital_course
+  score=12.0 id=SYN-DS-0006-F085 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=10.5 id=SYN-DS-0006-F084 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=dose value=2 section=medications_during_hospitalization
+  score=10.5 id=SYN-DS-0006-F086 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=frequency value=every 8 hours (3 doses: pre-incision and 2 post-operative) section=medications_during_hospitalization
+  score=10.5 id=SYN-DS-0006-F087 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C066
+SUBJECT: Tranexamic acid
+CATEGORY: Hospital Course
+RELATION: route
+VALUE:  
+FREQUENCY: 
+SOURCE TEXT: IV cefazolin prophylaxis and IV tranexamic acid given.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F070 subject=Hospital course event relation=action value=Right total knee arthroplasty under spinal anaesthesia with adductor canal block; IV cefazolin prophylaxis and IV tranexamic acid section=hospital_course
+  score=15.5 id=SYN-DS-0006-F092 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F091 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F093 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=frequency value=once at incision section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F094 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C070
+SUBJECT: Rivaroxaban
+CATEGORY: Hospital Course
+RELATION: dose
+VALUE: 10 mg
+FREQUENCY: daily
+SOURCE TEXT: Rivaroxaban 10 mg daily started for VTE prophylaxis
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 16
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "10",
+    "source_value": "10",
+    "matched_fact_id": "SYN-DS-0006-F112",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F113",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F114",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F112', 'SYN-DS-0006-F113', 'SYN-DS-0006-F114']
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F074 subject=Hospital course event relation=action value=Rivaroxaban 10 mg daily started; cefazolin course completed; losartan resumed section=hospital_course
+  score=15.5 id=SYN-DS-0006-F112 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=dose value=10 section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F113 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F114 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F115 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=status value=started section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C089
+SUBJECT: Cefazolin
+CATEGORY: Treatment and Medications During Hospitalisation
+RELATION: dose
+VALUE: 2 g
+FREQUENCY: every 8 hours
+SOURCE TEXT: Cefazolin 2 g IV every 8 hours ×3 doses (pre-incision + 2 post-op) – completed 2025-11-04 (24-hour prophylaxis)
+VERDICT: PARTIALLY_SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 9
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "2",
+    "source_value": "2",
+    "matched_fact_id": "SYN-DS-0006-F084",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "IV",
+    "source_value": "intravenous",
+    "matched_fact_id": "SYN-DS-0006-F085",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 8 hours",
+    "source_value": "every 8 hours (3 doses: pre-incision and 2 post-operative)",
+    "matched_fact_id": "SYN-DS-0006-F086",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "×3 doses (pre-incision + 2 post-op)",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F084', 'SYN-DS-0006-F085', 'SYN-DS-0006-F086']
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F084 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=dose value=2 section=medications_during_hospitalization
+  score=15.0 id=SYN-DS-0006-F086 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=frequency value=every 8 hours (3 doses: pre-incision and 2 post-operative) section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F085 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F087 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F088 subject=Cefazolin (inpatient, 2 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C090
+SUBJECT: Tranexamic acid
+CATEGORY: Treatment and Medications During Hospitalisation
+RELATION: dose
+VALUE: 1 g
+FREQUENCY: once at incision
+SOURCE TEXT: Tranexamic acid 1 g IV once at incision – completed
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F091",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "IV",
+    "source_value": "intravenous",
+    "matched_fact_id": "SYN-DS-0006-F092",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once at incision",
+    "source_value": "once at incision",
+    "matched_fact_id": "SYN-DS-0006-F093",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F091', 'SYN-DS-0006-F092', 'SYN-DS-0006-F093']
+TOP 5 CANDIDATES:
+  score=12.5 id=SYN-DS-0006-F091 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F092 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=route value=intravenous section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F093 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=frequency value=once at incision section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F094 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=status value=completed section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F095 subject=Tranexamic acid (inpatient, 1 g intravenous, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C091
+SUBJECT: Paracetamol
+CATEGORY: Treatment and Medications During Hospitalisation
+RELATION: dose
+VALUE: 1 g
+FREQUENCY: every 6 hours regular
+SOURCE TEXT: Paracetamol 1 g oral every 6 hours regular (changed from home PRN regimen)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 19
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F098",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F099",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 6 hours regular",
+    "source_value": "every 6 hours (regular)",
+    "matched_fact_id": "SYN-DS-0006-F100",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F098', 'SYN-DS-0006-F099', 'SYN-DS-0006-F100']
+TOP 5 CANDIDATES:
+  score=12.5 id=SYN-DS-0006-F098 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=dose value=1 section=medications_during_hospitalization
+  score=12.0 id=SYN-DS-0006-F101 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=status value=dose_changed section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F099 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=route value=oral section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F100 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=frequency value=every 6 hours (regular) section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F102 subject=Paracetamol (inpatient, 1 g oral, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C092
+SUBJECT: Oxycodone
+CATEGORY: Treatment and Medications During Hospitalisation
+RELATION: dose
+VALUE: 5 mg
+FREQUENCY: every 4 hours PRN (max 4 doses/24h)
+SOURCE TEXT: Oxycodone 5 mg oral every 4 hours PRN (max 4 doses/24h) – started for moderate-severe pain; morphine avoided due to intolerance
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 15
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "5",
+    "source_value": "5",
+    "matched_fact_id": "SYN-DS-0006-F105",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F106",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 4 hours PRN (max 4 doses/24h)",
+    "source_value": "every 4 hours as needed (maximum 4 doses in 24 hours)",
+    "matched_fact_id": "SYN-DS-0006-F107",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F105', 'SYN-DS-0006-F106', 'SYN-DS-0006-F107']
+TOP 5 CANDIDATES:
+  score=12.5 id=SYN-DS-0006-F105 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=dose value=5 section=medications_during_hospitalization
+  score=12.0 id=SYN-DS-0006-F107 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=frequency value=every 4 hours as needed (maximum 4 doses in 24 hours) section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F106 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=route value=oral section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F108 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=status value=started section=medications_during_hospitalization
+  score=11.0 id=SYN-DS-0006-F109 subject=Oxycodone (inpatient, 5 mg oral, from 2025-11-03) relation=start date value=2025-11-03 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C093
+SUBJECT: Rivaroxaban
+CATEGORY: Treatment and Medications During Hospitalisation
+RELATION: dose
+VALUE: 10 mg
+FREQUENCY: once daily
+SOURCE TEXT: Rivaroxaban 10 mg oral once daily – started 2025-11-04 for VTE prophylaxis
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 16
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "10",
+    "source_value": "10",
+    "matched_fact_id": "SYN-DS-0006-F112",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F113",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F114",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F112', 'SYN-DS-0006-F113', 'SYN-DS-0006-F114']
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F112 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=dose value=10 section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F113 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F114 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F115 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=status value=started section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F116 subject=Rivaroxaban (inpatient, 10 mg oral, from 2025-11-04) relation=start date value=2025-11-04 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C094
+SUBJECT: Losartan
+CATEGORY: Treatment and Medications During Hospitalisation
+RELATION: dose
+VALUE: 50 mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily – resumed 2025-11-04 (withheld morning of surgery)
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 20
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "50",
+    "source_value": "50",
+    "matched_fact_id": "SYN-DS-0006-F119",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F120",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F121",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F119', 'SYN-DS-0006-F120', 'SYN-DS-0006-F121']
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F119 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=dose value=50 section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F120 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=route value=oral section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F121 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=frequency value=once daily section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F122 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=status value=continued section=medications_during_hospitalization
+  score=14.0 id=SYN-DS-0006-F123 subject=Losartan (inpatient, 50 mg oral, from 2025-11-04) relation=start date value=2025-11-04 section=medications_during_hospitalization
+
+------------------------------------------------------------
+CLAIM ID: C107
+SUBJECT: Rivaroxaban
+CATEGORY: Discharge Medications
+RELATION: dose
+VALUE: 10 mg
+FREQUENCY: twice daily
+SOURCE TEXT: Rivaroxaban 10 mg oral twice daily – until 2025-11-17 inclusive (14 days total).
+VERDICT: CONTRADICTED
+ERROR TYPE: frequency_mismatch
+CANDIDATES: 9
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "10",
+    "source_value": "10",
+    "matched_fact_id": "SYN-DS-0006-F139",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F140",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "twice daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F141",
+    "verdict": "CONTRADICTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "until 2025-11-17 inclusive (14 days total)",
+    "source_value": "Until 2025-11-17 inclusive (14 days total)",
+    "matched_fact_id": "SYN-DS-0006-F142",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F139', 'SYN-DS-0006-F140', 'SYN-DS-0006-F141', 'SYN-DS-0006-F142']
+TOP 5 CANDIDATES:
+  score=20.5 id=SYN-DS-0006-F139 subject=Rivaroxaban (discharge, 10 mg once daily) relation=dose value=10 section=discharge_medications
+  score=19.0 id=SYN-DS-0006-F140 subject=Rivaroxaban (discharge, 10 mg once daily) relation=route value=oral section=discharge_medications
+  score=19.0 id=SYN-DS-0006-F141 subject=Rivaroxaban (discharge, 10 mg once daily) relation=frequency value=once daily section=discharge_medications
+  score=19.0 id=SYN-DS-0006-F142 subject=Rivaroxaban (discharge, 10 mg once daily) relation=duration value=Until 2025-11-17 inclusive (14 days total) section=discharge_medications
+  score=19.0 id=SYN-DS-0006-F143 subject=Rivaroxaban (discharge, 10 mg once daily) relation=status relative to pre-admission regimen value=started section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C108
+SUBJECT: Paracetamol
+CATEGORY: Discharge Medications
+RELATION: dose
+VALUE: 1 g
+FREQUENCY: every 6 hours regular
+SOURCE TEXT: Paracetamol 1 g oral every 6 hours regular – for 2 weeks, then as needed.
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 12
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "1",
+    "source_value": "1",
+    "matched_fact_id": "SYN-DS-0006-F147",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F148",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 6 hours regular",
+    "source_value": "every 6 hours (regular)",
+    "matched_fact_id": "SYN-DS-0006-F149",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "for 2 weeks, then as needed",
+    "source_value": "2 weeks, then as needed",
+    "matched_fact_id": "SYN-DS-0006-F150",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F147', 'SYN-DS-0006-F148', 'SYN-DS-0006-F149', 'SYN-DS-0006-F150']
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F147 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=dose value=1 section=discharge_medications
+  score=15.0 id=SYN-DS-0006-F151 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=status relative to pre-admission regimen value=dose_changed section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F148 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=route value=oral section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F149 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=frequency value=every 6 hours (regular) section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F150 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=duration value=2 weeks, then as needed section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C109
+SUBJECT: Paracetamol
+CATEGORY: Discharge Medications
+RELATION: maximum dose
+VALUE: 4 g/24h
+FREQUENCY: 
+SOURCE TEXT: Maximum 4 g/24h.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 12
+FIELD RESULTS:
+{
+  "maximum dose": {
+    "claim_value": "4",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "maximum dose",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=14.0 id=SYN-DS-0006-F147 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=dose value=1 section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F148 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=route value=oral section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F149 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=frequency value=every 6 hours (regular) section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F150 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=duration value=2 weeks, then as needed section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F151 subject=Paracetamol (discharge, 1 g every 6 hours (regular)) relation=status relative to pre-admission regimen value=dose_changed section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C110
+SUBJECT: Oxycodone
+CATEGORY: Discharge Medications
+RELATION: dose
+VALUE: 5 mg
+FREQUENCY: every 4 hours PRN for severe pain
+SOURCE TEXT: Oxycodone 5 mg oral every 4 hours PRN for severe pain – 5 days (20 tablets).
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "5",
+    "source_value": "5",
+    "matched_fact_id": "SYN-DS-0006-F155",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F156",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "every 4 hours PRN for severe pain",
+    "source_value": "every 4 hours as needed for severe pain",
+    "matched_fact_id": "SYN-DS-0006-F157",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "5 days (20 tablets)",
+    "source_value": "5 days (20 tablets)",
+    "matched_fact_id": "SYN-DS-0006-F158",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F155', 'SYN-DS-0006-F156', 'SYN-DS-0006-F157', 'SYN-DS-0006-F158']
+TOP 5 CANDIDATES:
+  score=15.5 id=SYN-DS-0006-F155 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=dose value=5 section=discharge_medications
+  score=15.0 id=SYN-DS-0006-F161 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=special instructions value=Maximum 4 doses (20 mg) in 24 hours; may cause drowsiness and constipation; no driving section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F156 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=route value=oral section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F157 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=frequency value=every 4 hours as needed for severe pain section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F158 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=duration value=5 days (20 tablets) section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C111
+SUBJECT: Oxycodone
+CATEGORY: Discharge Medications
+RELATION: maximum dose
+VALUE: 4 doses (20 mg) /24h
+FREQUENCY: 
+SOURCE TEXT: Max 4 doses (20 mg)/24h
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 8
+FIELD RESULTS:
+{
+  "maximum dose": {
+    "claim_value": "4 doses (20 mg)",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "maximum dose",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=14.0 id=SYN-DS-0006-F155 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=dose value=5 section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F156 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=route value=oral section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F157 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=frequency value=every 4 hours as needed for severe pain section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F158 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=duration value=5 days (20 tablets) section=discharge_medications
+  score=14.0 id=SYN-DS-0006-F159 subject=Oxycodone (discharge, 5 mg every 4 hours as needed for severe pain) relation=status relative to pre-admission regimen value=started section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C112
+SUBJECT: Losartan
+CATEGORY: Discharge Medications
+RELATION: dose
+VALUE: 50 mg
+FREQUENCY: once daily
+SOURCE TEXT: Losartan 50 mg oral once daily – ongoing, unchanged home medication.
+VERDICT: SUPPORTED
+ERROR TYPE: None
+CANDIDATES: 13
+FIELD RESULTS:
+{
+  "dose": {
+    "claim_value": "50",
+    "source_value": "50",
+    "matched_fact_id": "SYN-DS-0006-F163",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "dose",
+    "matched_fact_ids": []
+  },
+  "route": {
+    "claim_value": "oral",
+    "source_value": "oral",
+    "matched_fact_id": "SYN-DS-0006-F164",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "route",
+    "matched_fact_ids": []
+  },
+  "frequency": {
+    "claim_value": "once daily",
+    "source_value": "once daily",
+    "matched_fact_id": "SYN-DS-0006-F165",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "frequency",
+    "matched_fact_ids": []
+  },
+  "duration": {
+    "claim_value": "ongoing, unchanged home medication",
+    "source_value": "Ongoing",
+    "matched_fact_id": "SYN-DS-0006-F166",
+    "verdict": "SUPPORTED",
+    "ambiguous_evidence": false,
+    "matched_relation": "duration",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: ['SYN-DS-0006-F163', 'SYN-DS-0006-F164', 'SYN-DS-0006-F165', 'SYN-DS-0006-F166']
+TOP 5 CANDIDATES:
+  score=17.5 id=SYN-DS-0006-F163 subject=Losartan (discharge, 50 mg once daily) relation=dose value=50 section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F164 subject=Losartan (discharge, 50 mg once daily) relation=route value=oral section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F165 subject=Losartan (discharge, 50 mg once daily) relation=frequency value=once daily section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F166 subject=Losartan (discharge, 50 mg once daily) relation=duration value=Ongoing section=discharge_medications
+  score=16.0 id=SYN-DS-0006-F167 subject=Losartan (discharge, 50 mg once daily) relation=status relative to pre-admission regimen value=continued section=discharge_medications
+
+------------------------------------------------------------
+CLAIM ID: C113
+SUBJECT: Meloxicam
+CATEGORY: Discontinued Medications
+RELATION: status
+VALUE: stopped 2025-10-27 per pre-operative instructions; not restarted due to bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review 
+FREQUENCY: 
+SOURCE TEXT: Meloxicam – stopped 2025-10-27 per pre-operative instructions; not restarted due to bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review.
+VERDICT: INSUFFICIENT_EVIDENCE
+ERROR TYPE: None
+CANDIDATES: 6
+FIELD RESULTS:
+{
+  "condition": {
+    "claim_value": "stopped 2025-10-27 per pre-operative instructions; not restarted due to bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review",
+    "source_value": null,
+    "matched_fact_id": null,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "ambiguous_evidence": false,
+    "matched_relation": "condition",
+    "matched_fact_ids": []
+  }
+}
+MATCHED FACT IDS: []
+TOP 5 CANDIDATES:
+  score=8.0 id=SYN-DS-0006-F025 subject=Meloxicam (pre-admission) relation=indication value=Knee osteoarthritis pain; stopped on 2025-10-27 per pre-operative instructions section=medications_before_admission
+  score=8.0 id=SYN-DS-0006-F171 subject=Meloxicam (discontinued) relation=discontinuation reason value=Stopped before surgery per pre-operative instructions; not restarted because of bleeding risk with rivaroxaban; avoid NSAIDs until orthopaedic review section=discontinued_medications
+  score=8.0 id=SYN-DS-0006-F172 subject=Meloxicam (discontinued) relation=discontinued on value=2025-10-27 section=discontinued_medications
+  score=5.0 id=SYN-DS-0006-F022 subject=Meloxicam (pre-admission) relation=dose value=7.5 section=medications_before_admission
+  score=5.0 id=SYN-DS-0006-F023 subject=Meloxicam (pre-admission) relation=route value=oral section=medications_before_admission

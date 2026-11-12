@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-051_SYN-DS-0003.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C068",
+      "category": "procedure",
+      "subject": "Ultrasound-guided right internal jugular central venous catheter insertion",
+      "relation": "performed_on",
+      "value": "2025-09-19",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2025-09-19",
+      "negated": false,
+      "source_text": "Ultrasound-guided right internal jugular central venous catheter insertion (2025-09-19) for vasopressor administration. Tip at cavoatrial junction; removed 2025-09-21."
+    }
+  ]
+}

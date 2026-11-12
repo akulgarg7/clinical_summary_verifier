@@ -1,0 +1,15 @@
+Rows in uncertain audit: 604
+CSV: /mnt/data/clinical_latest_work/clinical_summary_verifier/results/uncertain_claims_after_fixes.csv
+Markdown: /mnt/data/clinical_latest_work/clinical_summary_verifier/results/UNCERTAIN_VERDICT_AUDIT_AFTER_FIXES.md
+Transitions:
+  CONTRADICTED -> CONTRADICTED: 3
+  INSUFFICIENT_EVIDENCE -> INSUFFICIENT_EVIDENCE: 538
+  INSUFFICIENT_EVIDENCE -> PARTIALLY_SUPPORTED: 8
+  INSUFFICIENT_EVIDENCE -> SUPPORTED: 131
+  PARTIALLY_SUPPORTED -> PARTIALLY_SUPPORTED: 47
+  PARTIALLY_SUPPORTED -> SUPPORTED: 8
+  SUPPORTED -> INSUFFICIENT_EVIDENCE: 10
+  SUPPORTED -> PARTIALLY_SUPPORTED: 1
+  SUPPORTED -> SUPPORTED: 411
+Review flags: {'HIGH': 143, 'REVIEW': 423, 'MEDIUM': 38}
+No candidates: 81 exact value candidate: 78 subject-compatible exact value: 62

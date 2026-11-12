@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-031_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C069",
+      "category": "Medication",
+      "subject": "ibuprofen",
+      "relation": "started",
+      "value": "400",
+      "unit": "mg",
+      "route": "intravenous",
+      "frequency": "q8h with food",
+      "duration": "",
+      "date_time": "13 March",
+      "negated": false,
+      "source_text": "IV ibuprofen 400 mg q8h with food started;"
+    }
+  ]
+}

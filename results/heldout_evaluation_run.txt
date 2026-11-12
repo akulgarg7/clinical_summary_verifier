@@ -1,0 +1,17 @@
+Held-out records: SYN-DS-0001, SYN-DS-0002, SYN-DS-0004, SYN-DS-0005
+Eligible source facts: 290; contradiction mutations: 333; skipped facts: 570
+Overall (control + mutation samples):
+  TP=325 FP=0 FN=8 TN=290
+  precision=1.0000 recall=0.9760 F1=0.9878 specificity=1.0000 accuracy=0.9872
+Mutation detection: precision=1.0000 recall=0.9760 F1=0.9878; TP=325 FN=8
+Exact controls: false positives=0/290 (FPR=0.0000); non-contradicted=290/290
+Saved full claim-level report: /mnt/data/clinical_latest_work/clinical_summary_verifier/results/final_holdout_evaluation_report.json
+Per mutation type:
+  categorical: n=5 TP=5 FN=0 FP=0 recall=1.000 precision=1.000 F1=1.000
+  date: n=68 TP=63 FN=5 FP=0 recall=0.926 precision=1.000 F1=0.962
+  duration: n=6 TP=6 FN=0 FP=0 recall=1.000 precision=1.000 F1=1.000
+  frequency: n=41 TP=41 FN=0 FP=0 recall=1.000 precision=1.000 F1=1.000
+  numeric: n=88 TP=85 FN=3 FP=0 recall=0.966 precision=1.000 F1=0.983
+  route: n=53 TP=53 FN=0 FP=0 recall=1.000 precision=1.000 F1=1.000
+  status: n=29 TP=29 FN=0 FP=0 recall=1.000 precision=1.000 F1=1.000
+  unit: n=43 TP=43 FN=0 FP=0 recall=1.000 precision=1.000 F1=1.000

@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-066_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C084",
+      "category": "Medication",
+      "subject": "paracetamol",
+      "relation": "started",
+      "value": "2",
+      "unit": "g",
+      "route": "oral",
+      "frequency": "q12h PRN",
+      "duration": "",
+      "date_time": "13 March",
+      "negated": false,
+      "source_text": "Oral paracetamol 2 g q12h PRN started 13 March."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-087_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C040",
+      "category": "Laboratory Result",
+      "subject": "Total bilirubin",
+      "relation": "is",
+      "value": "0.8",
+      "unit": "mmol/L",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "12 March 2025",
+      "negated": false,
+      "source_text": "Total bilirubin 0.8 mmol/L (normal)"
+    }
+  ]
+}

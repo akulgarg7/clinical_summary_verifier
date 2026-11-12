@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-085_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C037",
+      "category": "Laboratory Result",
+      "subject": "Na⁺",
+      "relation": "is",
+      "value": "138",
+      "unit": "mg/dL",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "12 March 2025",
+      "negated": false,
+      "source_text": "Na⁺ 138 mg/dL"
+    }
+  ]
+}

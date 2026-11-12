@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-078_SYN-DS-0004.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C048",
+      "category": "laboratory_result",
+      "subject": "Serum creatinine",
+      "relation": "is",
+      "value": "1.2",
+      "unit": "mg/dL",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2026-01-11",
+      "negated": false,
+      "source_text": "repeat 1.2 mg/dL on 2026-01-11"
+    }
+  ]
+}

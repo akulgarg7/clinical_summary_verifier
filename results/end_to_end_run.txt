@@ -1,0 +1,8 @@
+=== END-TO-END EVALUATION (SAVED CLAIMS) ===
+Summaries: 11
+Claims verified: 1157
+Claim source text validated: 1157/1157
+Verdicts: {'SUPPORTED': 550, 'INSUFFICIENT_EVIDENCE': 548, 'PARTIALLY_SUPPORTED': 56, 'CONTRADICTED': 3}
+Known injected errors detected: 3/3
+Global precision/recall/F1: NOT CALCULATED (insufficient claim-level gold labels)
+Report: /mnt/data/clinical_latest_work/clinical_summary_verifier/results/end_to_end_after_fixes.json

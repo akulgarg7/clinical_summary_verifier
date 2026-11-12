@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-047_SYN-DS-0002.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C020",
+      "category": "pre-admission_medication",
+      "subject": "Ramipril",
+      "relation": "is prescribed",
+      "value": "5",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "twice daily",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": "Ramipril 5 mg oral twice daily"
+    }
+  ]
+}

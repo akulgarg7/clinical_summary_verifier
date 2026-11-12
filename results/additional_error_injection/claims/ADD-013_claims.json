@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-013_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C018",
+      "category": "Medication",
+      "subject": "Cetirizine",
+      "relation": "is pre-admission medication",
+      "value": "12",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "once daily",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": "Cetirizine 12 mg oral once daily (for seasonal allergic rhinitis)"
+    }
+  ]
+}

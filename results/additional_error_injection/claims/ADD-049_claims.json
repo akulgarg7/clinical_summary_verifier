@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-049_SYN-DS-0002.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C099",
+      "category": "discharge_medication",
+      "subject": "Ticagrelor",
+      "relation": "is prescribed",
+      "value": "90",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "twice daily",
+      "duration": "13 months until 2026-06-04",
+      "date_time": "",
+      "negated": false,
+      "source_text": "Ticagrelor 90 mg oral twice daily – 13 months until 2026-06-04 (do not stop without cardiologist advice; may cause mild breathlessness)"
+    }
+  ]
+}

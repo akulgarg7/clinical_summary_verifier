@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-041_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C070",
+      "category": "Medication",
+      "subject": "cetirizine",
+      "relation": "resumed",
+      "value": "10",
+      "unit": "mg",
+      "route": "",
+      "frequency": "twice daily",
+      "duration": "",
+      "date_time": "13 March",
+      "negated": false,
+      "source_text": "cetirizine 10 mg twice daily resumed."
+    }
+  ]
+}

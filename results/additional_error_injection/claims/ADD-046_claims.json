@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-046_SYN-DS-0002.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C019",
+      "category": "pre-admission_medication",
+      "subject": "Metformin",
+      "relation": "is prescribed",
+      "value": "1000",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "twice twice daily with meals",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": "Metformin 1000 mg oral twice twice daily with meals"
+    }
+  ]
+}

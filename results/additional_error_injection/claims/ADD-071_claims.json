@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-071_SYN-DS-0002.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C021",
+      "category": "pre-admission_medication",
+      "subject": "Atorvastatin",
+      "relation": "is prescribed",
+      "value": "24",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "twice daily at night",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": "Atorvastatin 24 mg oral twice daily at night"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+HISTORICAL SNAPSHOT — GENERATED BEFORE THE GENERALIZATION CHANGES ON 2026-10-25. These verdict counts are not current evaluation metrics.
+
+OFFLINE BROAD AUDIT — UPDATED WORKING TREE
+All saved claims are evaluated against independently retrieved facts; no Gemini calls are made.
+Counts are verdicts produced by this prototype, not a clinician-validated accuracy score.
+
+SYN-DS-0001_claims.json: 106 claims; SUPPORTED=26, CONTRADICTED=7, PARTIALLY_SUPPORTED=4, INSUFFICIENT_EVIDENCE=69
+SYN-DS-0002_claims.json: 125 claims; SUPPORTED=24, CONTRADICTED=2, INSUFFICIENT_EVIDENCE=99
+SYN-DS-0003_E003_claims.json: 81 claims; SUPPORTED=65, CONTRADICTED=1, PARTIALLY_SUPPORTED=6, INSUFFICIENT_EVIDENCE=9
+  CONTRADICTED C041 (result_mismatch): Creatinine 2.9 mg/dL (admission)
+SYN-DS-0003_claims.json: 85 claims; SUPPORTED=30, CONTRADICTED=3, PARTIALLY_SUPPORTED=1, INSUFFICIENT_EVIDENCE=51
+SYN-DS-0004_claims.json: 95 claims; SUPPORTED=32, CONTRADICTED=8, PARTIALLY_SUPPORTED=9, INSUFFICIENT_EVIDENCE=46
+SYN-DS-0005_claims.json: 123 claims; SUPPORTED=23, CONTRADICTED=6, PARTIALLY_SUPPORTED=4, INSUFFICIENT_EVIDENCE=90
+SYN-DS-0006_E001_claims.json: 118 claims; SUPPORTED=39, CONTRADICTED=1, PARTIALLY_SUPPORTED=9, INSUFFICIENT_EVIDENCE=69
+  CONTRADICTED C065 (dose_mismatch): Rivaroxaban 20 mg daily started for VTE prophylaxis
+SYN-DS-0006_E002_claims.json: 128 claims; SUPPORTED=39, CONTRADICTED=1, PARTIALLY_SUPPORTED=3, INSUFFICIENT_EVIDENCE=85
+  CONTRADICTED C107 (frequency_mismatch): Rivaroxaban 10 mg oral twice daily – until 2025-11-17 inclusive (14 days total).
+SYN-DS-0006_claims.json: 85 claims; SUPPORTED=35, PARTIALLY_SUPPORTED=9, INSUFFICIENT_EVIDENCE=41
+SYN-DS-0007_claims.json: 108 claims; SUPPORTED=46, CONTRADICTED=4, PARTIALLY_SUPPORTED=6, INSUFFICIENT_EVIDENCE=52
+SYN-DS-0008_claims.json: 103 claims; SUPPORTED=32, CONTRADICTED=15, PARTIALLY_SUPPORTED=2, INSUFFICIENT_EVIDENCE=54
+
+Audited injected-error regression files:
+  SYN-DS-0003_E003_claims.json: only C041 is CONTRADICTED (admission creatinine 2.9 mg/dL vs source 1.9 mg/dL).
+  SYN-DS-0006_E001_claims.json: only C065 is CONTRADICTED (rivaroxaban 20 mg vs source dose 10 mg).
+  SYN-DS-0006_E002_claims.json: only C107 is CONTRADICTED (rivaroxaban twice daily vs source once daily).
+The remaining files include contradictions that were not manually audited in this update. Do not assume every verdict in those files is correct.
+Total: 1157 saved claims across 11 files; runtime 15.97s.

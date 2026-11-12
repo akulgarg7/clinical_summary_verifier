@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-034_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C081",
+      "category": "Medication",
+      "subject": "metronidazole",
+      "relation": "administered",
+      "value": "500",
+      "unit": "mg",
+      "route": "oral",
+      "frequency": "single pre-operative dose",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": "oral metronidazole 500 mg single pre‑operative dose."
+    }
+  ]
+}

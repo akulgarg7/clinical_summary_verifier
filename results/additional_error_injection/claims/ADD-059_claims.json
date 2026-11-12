@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-059_SYN-DS-0004.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C059",
+      "category": "laboratory_result",
+      "subject": "Urine culture",
+      "relation": "is",
+      "value": "growth",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "",
+      "negated": false,
+      "source_text": "Urine culture: growth"
+    }
+  ]
+}

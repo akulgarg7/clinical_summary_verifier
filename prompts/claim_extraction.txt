@@ -8,11 +8,12 @@ IMPORTANT:
 - If a statement contains a numerical value, extract it.
 - If a statement contains a potentially incorrect or contradictory value, extract it exactly as written. Do NOT correct it using medical knowledge or other parts of the summary.
 - Preserve negation.
-- Break compound statements into separate atomic claims when practical.
+- Break compound statements into separate atomic claims whenever they assert different entities, attributes, time points, or regimen phases.
 - Do not infer information that is not explicitly stated.
+- Do not use information from the ground-truth record, other claims, or an error manifest. Extract only what the summary says.
 
 For each claim use:
-EVERY claim MUST contain ALL 12 fields shown below.
+EVERY claim MUST contain ALL 13 fields shown below.
 Never omit a field, even when its value is unknown.
 Use "" for an unknown field.
 
@@ -25,6 +26,7 @@ Use "" for an unknown field.
   "unit": "",
   "route": "",
   "frequency": "",
+  "time_of_day": "",
   "duration": "",
   "date_time": "",
   "negated": false,
@@ -49,7 +51,18 @@ Rules:
    - route = route
    - frequency = frequency
    - duration = duration
-   Do not put the medication name inside value when it can be placed in subject.
+   - Keep each medication attribute associated with the specific regimen and time period that states it.
+   - If one sentence describes a change in dose, route, frequency, or status (for example, "IV paracetamol was switched to oral paracetamol"), create separate claims for the before-change and after-change regimens when those details are explicit. Do not combine an earlier route/dose with a later route/dose in one claim.
+   - Treat start/stop dates, duration, and schedule as different attributes. Do not place a symptom duration in a medication-duration field.
+   - Do not put the medication name inside value when it can be placed in subject.
+   - time_of_day = broad time period such as morning, afternoon, evening, or night.
+   - Keep time_of_day separate from frequency and exact clock time.
+   - Example: "once daily at 9 PM" → frequency = "once daily",
+   time_of_day = "night", date_time = "21:00".
+   - Example: "twice daily in the afternoon" → frequency = "twice daily",
+   time_of_day = "afternoon", date_time = "".
+   - If the time of day is not explicitly stated or cannot be determined
+   confidently from the wording, use "".
 
 4. For laboratory claims:
    - subject = test name
@@ -71,8 +84,10 @@ Rules:
 
 8. source_text must be copied exactly from the discharge summary.
    It must be a continuous substring of the summary.
+   Use the smallest continuous phrase that fully supports this single claim. Do not use an entire multi-clause sentence if a shorter clause specifically supports the attribute.
    Do not paraphrase.
    Do not combine text from different locations.
+   For transition sentences, use separate continuous source_text spans for the respective regimen phases, where possible.
 
 9. If a field is not explicitly stated, use "".
 
@@ -91,6 +106,7 @@ Return exactly:
       "unit": "",
       "route": "",
       "frequency": "",
+      "time_of_day": "",
       "duration": "",
       "date_time": "",
       "negated": false,

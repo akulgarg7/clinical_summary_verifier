@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-057_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C041",
+      "category": "Imaging Result",
+      "subject": "CT abdomen and pelvis with IV contrast",
+      "relation": "is",
+      "value": "Appendix dilated to 11 mm with wall thickening and periappendiceal fat stranding; 6 mm appendicolith at base; extraluminal air or fluid collection; kidneys and ureters normal",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "12 March 2025",
+      "negated": false,
+      "source_text": "CT abdomen and pelvis with IV contrast (12 March 2025): Appendix dilated to 11 mm with wall thickening and periappendiceal fat stranding; 6 mm appendicolith at base; extraluminal air or fluid collection; kidneys and ureters normal."
+    }
+  ]
+}

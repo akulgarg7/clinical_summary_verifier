@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-021_SYN-DS-0001.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C079",
+      "category": "Medication",
+      "subject": "0.9% NaCl",
+      "relation": "administered",
+      "value": "150",
+      "unit": "mL/h",
+      "route": "IV",
+      "frequency": "",
+      "duration": "",
+      "date_time": "12 March to 13 March",
+      "negated": false,
+      "source_text": "IV fluids (0.9% NaCl 150 mL/h) – stopped 13 March once tolerating oral intake."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-055_SYN-DS-0007.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C087",
+      "category": "procedure",
+      "subject": "OGD with endoscopic haemostasis (adrenaline injection + 2 haemoclips) and antral biopsy",
+      "relation": "performed",
+      "value": "2026-05-22",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2026-05-22",
+      "negated": false,
+      "source_text": "OGD with endoscopic haemostasis (adrenaline injection + 2 haemoclips) and antral biopsy (2026-05-22) – successful treatment of Forrest IIa ulcer; no complications."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+=== ADDITIONAL MUTATION EVALUATION ===
+Mutations generated: 90
+Detected as contradicted: 90/90 (100.0%)
+Controls: 90/90 still SUPPORTED; 0 falsely contradicted
+allergy_polarity: 1/1 (100.0%) | {'CONTRADICTED': 1}
+duration: 1/1 (100.0%) | {'CONTRADICTED': 1}
+event_date: 6/6 (100.0%) | {'CONTRADICTED': 6}
+frequency: 12/12 (100.0%) | {'CONTRADICTED': 12}
+laboratory_numeric: 12/12 (100.0%) | {'CONTRADICTED': 12}
+medication_dose: 12/12 (100.0%) | {'CONTRADICTED': 12}
+multi_field_medication: 12/12 (100.0%) | {'CONTRADICTED': 12}
+narrative_polarity: 3/3 (100.0%) | {'CONTRADICTED': 3}
+route: 12/12 (100.0%) | {'CONTRADICTED': 12}
+temporal_value_swap: 7/7 (100.0%) | {'CONTRADICTED': 7}
+unit: 12/12 (100.0%) | {'CONTRADICTED': 12}
+Report: /mnt/data/clinical_latest_work/clinical_summary_verifier/results/additional_error_injection/additional_mutation_evaluation_report.json
+Summary: /mnt/data/clinical_latest_work/clinical_summary_verifier/results/additional_error_injection/ADDITIONAL_MUTATION_EVALUATION_SUMMARY.md

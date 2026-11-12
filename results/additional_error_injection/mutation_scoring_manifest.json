@@ -1,0 +1,1262 @@
+[
+  {
+    "test_id": "ADD-001",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C031",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F037"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-001_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-001_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-002",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C032",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F039"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-002_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-002_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-003",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C033",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F041"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-003_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-003_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-004",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C034",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F043"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-004_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-004_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-005",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C035",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F044"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-005_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-005_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-006",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C036",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F045"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-006_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-006_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-007",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C037",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F046"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-007_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-007_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-008",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C038",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F047"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-008_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-008_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-009",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C039",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F048"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-009_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-009_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-010",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C040",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F049"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-010_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-010_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-011",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C050",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F050"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-011_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-011_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-012",
+    "mutation_type": "laboratory_numeric",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C051",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F052"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-012_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-012_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-013",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C018",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F021",
+      "SYN-DS-0001-F022",
+      "SYN-DS-0001-F023"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-013_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-013_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-014",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C056",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F072",
+      "SYN-DS-0001-F073"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-014_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-014_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-015",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C057",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F093",
+      "SYN-DS-0001-F094",
+      "SYN-DS-0001-F095"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-015_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-015_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-016",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C058",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-016_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-016_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-017",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C060",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F079",
+      "SYN-DS-0001-F080",
+      "SYN-DS-0001-F081"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-017_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-017_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-018",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C061",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F086",
+      "SYN-DS-0001-F087",
+      "SYN-DS-0001-F088"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-018_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-018_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-019",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C069",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F114",
+      "SYN-DS-0001-F115",
+      "SYN-DS-0001-F116"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-019_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-019_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-020",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C070",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F121",
+      "SYN-DS-0001-F123"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-020_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-020_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-021",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C079",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F072",
+      "SYN-DS-0001-F073"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-021_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-021_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-022",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C080",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F079",
+      "SYN-DS-0001-F080",
+      "SYN-DS-0001-F081"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-022_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-022_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-023",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C081",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F086",
+      "SYN-DS-0001-F087",
+      "SYN-DS-0001-F088"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-023_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-023_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-024",
+    "mutation_type": "medication_dose",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C083",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-024_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-024_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-025",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C018",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F021",
+      "SYN-DS-0001-F022",
+      "SYN-DS-0001-F023"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-025_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-025_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-026",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C056",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F072",
+      "SYN-DS-0001-F073"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-026_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-026_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-027",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C057",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F093",
+      "SYN-DS-0001-F094",
+      "SYN-DS-0001-F095"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-027_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-027_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-028",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C058",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-028_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-028_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-029",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C060",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F079",
+      "SYN-DS-0001-F080",
+      "SYN-DS-0001-F081"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-029_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-029_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-030",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C061",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F086",
+      "SYN-DS-0001-F087",
+      "SYN-DS-0001-F088"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-030_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-030_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-031",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C069",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F114",
+      "SYN-DS-0001-F115",
+      "SYN-DS-0001-F116"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-031_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-031_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-032",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C079",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F072",
+      "SYN-DS-0001-F073"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-032_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-032_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-033",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C080",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F079",
+      "SYN-DS-0001-F080",
+      "SYN-DS-0001-F081"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-033_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-033_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-034",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C081",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F086",
+      "SYN-DS-0001-F087",
+      "SYN-DS-0001-F088"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-034_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-034_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-035",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C083",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-035_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-035_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-036",
+    "mutation_type": "route",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C084",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F107",
+      "SYN-DS-0001-F108",
+      "SYN-DS-0001-F109"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-036_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-036_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-037",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C018",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F021",
+      "SYN-DS-0001-F022",
+      "SYN-DS-0001-F023"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-037_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-037_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-038",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C057",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F093",
+      "SYN-DS-0001-F094",
+      "SYN-DS-0001-F095"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-038_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-038_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-039",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C058",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-039_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-039_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-040",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C069",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F114",
+      "SYN-DS-0001-F115",
+      "SYN-DS-0001-F116"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-040_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-040_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-041",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C070",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F121",
+      "SYN-DS-0001-F123"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-041_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-041_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-042",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C083",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-042_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-042_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-043",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C084",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F107",
+      "SYN-DS-0001-F108",
+      "SYN-DS-0001-F109"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-043_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-043_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-044",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C085",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F114",
+      "SYN-DS-0001-F115",
+      "SYN-DS-0001-F116"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-044_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-044_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-045",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C086",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F121",
+      "SYN-DS-0001-F123"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-045_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-045_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-046",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C019",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F024",
+      "SYN-DS-0002-F025",
+      "SYN-DS-0002-F026"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-046_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-046_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-047",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C020",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F028",
+      "SYN-DS-0002-F029",
+      "SYN-DS-0002-F030"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-047_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-047_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-048",
+    "mutation_type": "frequency",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C021",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F032",
+      "SYN-DS-0002-F033",
+      "SYN-DS-0002-F034"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-048_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-048_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-049",
+    "mutation_type": "duration",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C099",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F196",
+      "SYN-DS-0002-F197",
+      "SYN-DS-0002-F198",
+      "SYN-DS-0002-F199"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-049_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-049_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-050",
+    "mutation_type": "event_date",
+    "case_id": "SYN-DS-0003",
+    "source_claim_file": "SYN-DS-0003_claims.json",
+    "source_claim_id": "C007",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0003-F160"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-050_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-050_SYN-DS-0003.txt"
+  },
+  {
+    "test_id": "ADD-051",
+    "mutation_type": "event_date",
+    "case_id": "SYN-DS-0003",
+    "source_claim_file": "SYN-DS-0003_claims.json",
+    "source_claim_id": "C068",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0003-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-051_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-051_SYN-DS-0003.txt"
+  },
+  {
+    "test_id": "ADD-052",
+    "mutation_type": "event_date",
+    "case_id": "SYN-DS-0005",
+    "source_claim_file": "SYN-DS-0005_claims.json",
+    "source_claim_id": "C007",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0005-F143"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-052_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-052_SYN-DS-0005.txt"
+  },
+  {
+    "test_id": "ADD-053",
+    "mutation_type": "event_date",
+    "case_id": "SYN-DS-0005",
+    "source_claim_file": "SYN-DS-0005_claims.json",
+    "source_claim_id": "C123",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0005-F143"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-053_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-053_SYN-DS-0005.txt"
+  },
+  {
+    "test_id": "ADD-054",
+    "mutation_type": "event_date",
+    "case_id": "SYN-DS-0007",
+    "source_claim_file": "SYN-DS-0007_claims.json",
+    "source_claim_id": "C086",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0007-F081"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-054_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-054_SYN-DS-0007.txt"
+  },
+  {
+    "test_id": "ADD-055",
+    "mutation_type": "event_date",
+    "case_id": "SYN-DS-0007",
+    "source_claim_file": "SYN-DS-0007_claims.json",
+    "source_claim_id": "C087",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0007-F085"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-055_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-055_SYN-DS-0007.txt"
+  },
+  {
+    "test_id": "ADD-056",
+    "mutation_type": "allergy_polarity",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C017",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F020"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-056_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-056_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-057",
+    "mutation_type": "narrative_polarity",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C041",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F052"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-057_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-057_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-058",
+    "mutation_type": "narrative_polarity",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C046",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F051"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-058_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-058_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-059",
+    "mutation_type": "narrative_polarity",
+    "case_id": "SYN-DS-0004",
+    "source_claim_file": "SYN-DS-0004_claims.json",
+    "source_claim_id": "C059",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0004-F074"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-059_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-059_SYN-DS-0004.txt"
+  },
+  {
+    "test_id": "ADD-060",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C018",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F021",
+      "SYN-DS-0001-F022",
+      "SYN-DS-0001-F023"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-060_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-060_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-061",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C057",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F093",
+      "SYN-DS-0001-F094",
+      "SYN-DS-0001-F095"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-061_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-061_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-062",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C058",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-062_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-062_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-063",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C069",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F114",
+      "SYN-DS-0001-F115",
+      "SYN-DS-0001-F116"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-063_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-063_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-064",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C070",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F121",
+      "SYN-DS-0001-F123"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-064_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-064_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-065",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C083",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F100",
+      "SYN-DS-0001-F101",
+      "SYN-DS-0001-F102"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-065_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-065_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-066",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C084",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F107",
+      "SYN-DS-0001-F108",
+      "SYN-DS-0001-F109"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-066_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-066_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-067",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C085",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F114",
+      "SYN-DS-0001-F115",
+      "SYN-DS-0001-F116"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-067_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-067_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-068",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C086",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F121",
+      "SYN-DS-0001-F123"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-068_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-068_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-069",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C019",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F024",
+      "SYN-DS-0002-F025",
+      "SYN-DS-0002-F026"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-069_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-069_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-070",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C020",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F028",
+      "SYN-DS-0002-F029",
+      "SYN-DS-0002-F030"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-070_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-070_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-071",
+    "mutation_type": "multi_field_medication",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C021",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F032",
+      "SYN-DS-0002-F033",
+      "SYN-DS-0002-F034"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-071_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-071_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-072",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C051",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F052"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-072_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-072_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-073",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C052",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F054"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-073_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-073_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-074",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0003",
+    "source_claim_file": "SYN-DS-0003_claims.json",
+    "source_claim_id": "C043",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0003-F055"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-074_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-074_SYN-DS-0003.txt"
+  },
+  {
+    "test_id": "ADD-075",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0003",
+    "source_claim_file": "SYN-DS-0003_claims.json",
+    "source_claim_id": "C044",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0003-F057"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-075_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-075_SYN-DS-0003.txt"
+  },
+  {
+    "test_id": "ADD-076",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0003",
+    "source_claim_file": "SYN-DS-0003_claims.json",
+    "source_claim_id": "C045",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0003-F059"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-076_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-076_SYN-DS-0003.txt"
+  },
+  {
+    "test_id": "ADD-077",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0004",
+    "source_claim_file": "SYN-DS-0004_claims.json",
+    "source_claim_id": "C047",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0004-F055"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-077_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-077_SYN-DS-0004.txt"
+  },
+  {
+    "test_id": "ADD-078",
+    "mutation_type": "temporal_value_swap",
+    "case_id": "SYN-DS-0004",
+    "source_claim_file": "SYN-DS-0004_claims.json",
+    "source_claim_id": "C048",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0004-F065"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-078_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-078_SYN-DS-0004.txt"
+  },
+  {
+    "test_id": "ADD-079",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C031",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F037"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-079_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-079_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-080",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C032",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F039"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-080_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-080_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-081",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C033",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F041"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-081_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-081_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-082",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C034",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F043"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-082_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-082_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-083",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C035",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F044"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-083_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-083_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-084",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C036",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F045"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-084_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-084_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-085",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C037",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F046"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-085_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-085_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-086",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C038",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F047"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-086_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-086_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-087",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C040",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F049"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-087_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-087_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-088",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0001",
+    "source_claim_file": "SYN-DS-0001_claims.json",
+    "source_claim_id": "C050",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0001-F050"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-088_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-088_SYN-DS-0001.txt"
+  },
+  {
+    "test_id": "ADD-089",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C051",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F052"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-089_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-089_SYN-DS-0002.txt"
+  },
+  {
+    "test_id": "ADD-090",
+    "mutation_type": "unit",
+    "case_id": "SYN-DS-0002",
+    "source_claim_file": "SYN-DS-0002_claims.json",
+    "source_claim_id": "C052",
+    "expected_verdict": "CONTRADICTED",
+    "baseline_matched_fact_ids": [
+      "SYN-DS-0002-F054"
+    ],
+    "claim_file": "results/additional_error_injection/claims/ADD-090_claims.json",
+    "summary_file": "results/additional_error_injection/summaries/ADD-090_SYN-DS-0002.txt"
+  }
+]

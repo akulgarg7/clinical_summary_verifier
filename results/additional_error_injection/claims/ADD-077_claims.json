@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-077_SYN-DS-0004.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C047",
+      "category": "laboratory_result",
+      "subject": "Serum creatinine",
+      "relation": "is",
+      "value": "0.7",
+      "unit": "mg/dL",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2026-01-10",
+      "negated": false,
+      "source_text": "Serum creatinine: 0.7 mg/dL (pre‑renal)"
+    }
+  ]
+}

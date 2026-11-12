@@ -1,0 +1,20 @@
+{
+  "summary_file": "results/additional_error_injection/summaries/ADD-050_SYN-DS-0003.txt",
+  "claim_count": 1,
+  "claims": [
+    {
+      "claim_id": "C007",
+      "category": "encounter",
+      "subject": "patient",
+      "relation": "discharge_date",
+      "value": "2025-09-27",
+      "unit": "",
+      "route": "",
+      "frequency": "",
+      "duration": "",
+      "date_time": "2025-09-27",
+      "negated": false,
+      "source_text": "Discharge Date: 2025-09-27"
+    }
+  ]
+}
