@@ -1,9 +1,11 @@
 """Clinical Summary Verification System Streamlit app.
 
-The app reads existing summaries and patient records from disk. Extracted claims
-are persisted under data/claims/ and reused on subsequent runs; existing
-summaries and claims are never regenerated automatically. The main verification
-view combines saved summary claims with controlled mutation claims for the selected case.
+The app verifies saved original-summary claims and the selected patient's
+controlled mutation claims through the same retrieval, deterministic
+verification, and optional Gemini semantic-adjudication pipeline. Source labels
+and separate counts keep experimental mutations distinct from original-summary
+claims. Supported claims are retained in the downloadable research report but
+are omitted from the review-focused UI.
 """
 
 import base64
@@ -15,9 +17,7 @@ from pathlib import Path
 import streamlit as st
 
 from src.claim_extractor import extract_claims
-from src.evidence_builder import retrieve_candidate_facts
-from src.verification_engine import verify_claim_against_facts
-from src.semantic_adjudicator import maybe_apply_semantic_adjudications
+from src.verification_pipeline import verify_claims_batch
 
 from markdown_it import MarkdownIt
 
@@ -208,97 +208,79 @@ def safe_project_path(relative_path: str) -> Path | None:
     return candidate
 
 
-def load_mutation_claim(prediction: dict) -> dict:
-    """Load the saved atomic claim corresponding to a controlled mutation."""
-    claim_path = safe_project_path(prediction.get("claim_file", ""))
-    if claim_path is None or not claim_path.is_file():
-        return {}
-    try:
-        payload = json.loads(claim_path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return {}
-    claims_payload = payload.get("claims") if isinstance(payload, dict) else payload
-    return claims_payload[0] if isinstance(claims_payload, list) and claims_payload else {}
-
-
 def mismatch_description(field_results: dict) -> str:
-    """Summarize contradicted fields without using evaluation mutation labels."""
-    mismatches = []
+    """Summarize fields classified as contradicted for the results table."""
     if not isinstance(field_results, dict):
         return ""
+
+    mismatches = []
     for field_name, details in field_results.items():
         if not isinstance(details, dict):
             continue
-        if str(details.get("verdict", "")).upper() == "CONTRADICTED":
-            claimed = details.get("claim_value", "")
-            source = details.get("source_value", "")
-            fact_id = details.get("matched_fact_id", "")
-            part = f"{field_name}: {claimed!s} → {source!s}"
-            if fact_id:
-                part += f" [{fact_id}]"
-            mismatches.append(part)
+        if str(details.get("verdict", "")).upper() != "CONTRADICTED":
+            continue
+
+        claimed = details.get("claim_value", "")
+        source = details.get("source_value", "")
+        fact_id = details.get("matched_fact_id", "")
+        description = f"{field_name}: {claimed!s} → {source!s}"
+        if fact_id:
+            description += f" [{fact_id}]"
+        mismatches.append(description)
+
     return " | ".join(mismatches)
 
 
-def load_saved_mutation_predictions() -> list[dict]:
-    """Load previously computed predictions, never scoring-manifest labels."""
-    if not ADDITIONAL_MUTATION_REPORT_PATH.is_file():
-        return []
-    try:
-        report = json.loads(
-            ADDITIONAL_MUTATION_REPORT_PATH.read_text(encoding="utf-8")
-        )
-    except (OSError, json.JSONDecodeError):
-        return []
-    predictions = report.get("predictions", []) if isinstance(report, dict) else []
-    return predictions if isinstance(predictions, list) else []
-
-
-def run_additional_mutation_verification(
+def load_additional_mutation_claims(
     case_records: dict[str, dict], selected_case: str
-) -> list[dict]:
-    """Rerun only the saved mutation claims belonging to the selected patient case.
+) -> tuple[list[dict], list[dict], list[str]]:
+    """Load prepared mutation claims without verifying them here.
 
-    Mutation labels and expected verdicts are not read by this verification path.
+    All returned claims are sent through the same reusable verification batch
+    as the original-summary claims. Mutation IDs/labels are kept in parallel
+    UI metadata and are not passed to the verifier or Gemini.
     """
-    outcomes = []
+    loaded_claims: list[dict] = []
+    metadata: list[dict] = []
+    load_errors: list[str] = []
+
     if not ADDITIONAL_MUTATION_CLAIMS_DIR.is_dir():
-        return outcomes
+        return loaded_claims, metadata, load_errors
 
     for claim_path in sorted(ADDITIONAL_MUTATION_CLAIMS_DIR.glob("ADD-*_claims.json")):
         try:
             payload = json.loads(claim_path.read_text(encoding="utf-8"))
-            claims_for_file = payload.get("claims", []) if isinstance(payload, dict) else payload
-            summary_reference = payload.get("summary_file", "") if isinstance(payload, dict) else ""
+            claims_for_file = (
+                payload.get("claims", []) if isinstance(payload, dict) else payload
+            )
+            summary_reference = (
+                payload.get("summary_file", "") if isinstance(payload, dict) else ""
+            )
             if not isinstance(claims_for_file, list) or not claims_for_file:
                 continue
+
             case_id = mutation_case_id(summary_reference, list(case_records))
             if case_id != selected_case:
                 continue
-            record = case_records[case_id]
-            claim = claims_for_file[0]
-            candidates = retrieve_candidate_facts(
-                claim, record.get("ground_truth_facts", []), top_k=20, record=record
+
+            for claim_index, claim in enumerate(claims_for_file):
+                if not isinstance(claim, dict):
+                    load_errors.append(
+                        f"{claim_path.name}: claim {claim_index + 1} is not an object."
+                    )
+                    continue
+                loaded_claims.append(dict(claim))
+                metadata.append({
+                    "source_type": "Controlled mutation test",
+                    "test_id": claim_path.stem.removesuffix("_claims"),
+                    "display_claim_id": str(claim.get("claim_id", "")),
+                })
+        except (OSError, json.JSONDecodeError, TypeError, ValueError) as exc:
+            load_errors.append(
+                f"{claim_path.name}: {type(exc).__name__}: {exc}"
             )
-            result = verify_claim_against_facts(claim, candidates, record=record)
-            outcomes.append({
-                "test_id": claim_path.stem.removesuffix("_claims"),
-                "case_id": case_id,
-                "claim": claim,
-                "result": result,
-                "candidates": candidates,
-                "processing_error": None,
-            })
-        except Exception as exc:
-            outcomes.append({
-                "test_id": claim_path.stem.removesuffix("_claims"),
-                "case_id": selected_case,
-                "claim": {},
-                "result": None,
-                "candidates": [],
-                "processing_error": f"{type(exc).__name__}: {exc}",
-            })
-    return outcomes
+
+    return loaded_claims, metadata, load_errors
 
 
 def read_claims_file(claims_path: Path):
@@ -435,9 +417,10 @@ st.title("🏥 Clinical Summary Verification System")
 st.markdown(
     """
     <div class="app-subtitle">
-      Select a patient case and run one verification action. The results combine
-      discrepancies found in the saved original summary with controlled mutation
-      test claims for that patient, clearly identifying each source.
+      Select a patient case and run one unified verification. Original-summary
+      claims and controlled experimental claims use the same evidence retrieval,
+      deterministic verification, and optional Gemini adjudication pipeline.
+      The source label distinguishes real summary claims from test inputs.
     </div>
     """,
     unsafe_allow_html=True,
@@ -712,381 +695,380 @@ st.divider()
 
 
 # ============================================================
-# 5. INDEPENDENT EVIDENCE RETRIEVAL + WHOLE-SUMMARY VERIFICATION
+# 5. UNIFIED CLAIM VERIFICATION
 # ============================================================
 
-st.header("5. Claim Verification")
+st.header("5. Unified Claim Verification")
 st.markdown(
-    "Click **Verify Entire Discharge Summary** to check the selected patient's "
-    "summary claims against the ground-truth record. "
-    "All claims classified as CONTRADICTED appear in the discrepancy list. "
+    "Original discharge-summary claims and the selected patient's existing "
+    "controlled mutation claims are evaluated through the same verification "
+    "pipeline. The source column identifies which claims come from the original "
+    "summary and which are experimental test inputs."
 )
 
 if not claims:
-    st.info("Load or extract claims before verifying the complete discharge summary.")
+    st.info("Load or extract claims before running verification.")
 else:
     verification_key = current_summary_key
     saved_results_key = st.session_state.get("summary_verification_results_key")
 
+    # Load mutation inputs up front only to show the combined run size. The
+    # mutation labels/test IDs remain UI metadata and are never sent to Gemini.
+    case_record_map = {get_case_id(record): record for record in records}
+    preview_mutation_claims, preview_mutation_metadata, preview_mutation_errors = (
+        load_additional_mutation_claims(case_record_map, selected_case)
+    )
+    original_claim_count = len(claims)
+    mutation_claim_count = len(preview_mutation_claims)
+    total_input_claim_count = original_claim_count + mutation_claim_count
+
     if st.button(
-        f"Verify Entire Discharge Summary ({len(claims)} claims)",
+        f"Verify All Claims ({total_input_claim_count})",
         type="primary",
-        key=f"verify_entire_summary::{selected_summary_file.stem}",
+        key=f"verify_all_claims::{selected_summary_file.stem}",
     ):
+        # Create one mixed input list, but replace claim IDs with opaque unique
+        # per-run IDs. This prevents collisions between original claims and
+        # controlled mutation claims that may reuse the same C### identifiers.
+        # Test IDs and source labels are kept outside the model input.
+        combined_claims: list[dict] = []
+        result_metadata: list[dict] = []
+        run_claim_ids: list[str] = []
+
+        for index, original_claim in enumerate(claims):
+            display_id = str(original_claim.get("claim_id", f"C{index + 1:03d}"))
+            internal_id = f"VERIFY-{index + 1:06d}"
+            prepared_claim = dict(original_claim)
+            prepared_claim["claim_id"] = internal_id
+            combined_claims.append(prepared_claim)
+            run_claim_ids.append(internal_id)
+            result_metadata.append({
+                "source_type": "Original discharge summary",
+                "test_id": "",
+                "display_claim_id": display_id,
+            })
+
+        for index, mutation_claim in enumerate(preview_mutation_claims):
+            metadata = preview_mutation_metadata[index]
+            display_id = str(
+                metadata.get("display_claim_id") or f"Mutation claim {index + 1}"
+            )
+            internal_id = f"VERIFY-{len(combined_claims) + 1:06d}"
+            prepared_claim = dict(mutation_claim)
+            prepared_claim["claim_id"] = internal_id
+            combined_claims.append(prepared_claim)
+            run_claim_ids.append(internal_id)
+            result_metadata.append(metadata)
+
         ground_truth_facts = selected_record.get("ground_truth_facts", [])
-        batch_results = []
+        progress = st.progress(0, text="Preparing unified verification...")
+        total_claims = len(combined_claims)
 
-        progress = st.progress(0, text="Preparing full-summary verification...")
-        total_claims = len(claims)
-
-        for index, claim in enumerate(claims):
-            claim_id = claim.get("claim_id", f"Claim {index + 1}")
-            try:
-                candidates = retrieve_candidate_facts(
-                    claim,
-                    ground_truth_facts,
-                    top_k=20,
-                    record=selected_record,
-                )
-                result = verify_claim_against_facts(
-                    claim,
-                    candidates,
-                    record=selected_record,
-                )
-                batch_results.append(
-                    {
-                        "claim": claim,
-                        "candidates": candidates,
-                        "result": result,
-                        "error": None,
-                        "source_type": "Discharge summary",
-                        "test_id": "",
-                    }
-                )
-            except Exception as exc:
-                batch_results.append(
-                    {
-                        "claim": claim,
-                        "candidates": [],
-                        "result": None,
-                        "error": str(exc),
-                        "source_type": "Discharge summary",
-                        "test_id": "",
-                    }
-                )
-
+        def update_verification_progress(completed: int, total: int):
             progress.progress(
-                (index + 1) / total_claims,
-                text=f"Verified {index + 1} of {total_claims} claims...",
+                completed / total if total else 1.0,
+                text=f"Retrieved evidence and verified {completed} of {total} claims...",
             )
 
-        # Optional, single-batch Gemini fallback is disabled by default. It only
-        # considers uncertain claims with exactly one unresolved field and never
-        # overrides a deterministic CONTRADICTED result. Any failure leaves the
-        # deterministic results intact.
-        try:
-            batch_results, semantic_status = maybe_apply_semantic_adjudications(
-                batch_results
-            )
-        except Exception as exc:
-            semantic_status = {
-                "enabled": True,
-                "applied": 0,
-                "error": type(exc).__name__,
-                "reason": "semantic fallback failed; deterministic results retained",
-            }
-
-        # Include controlled mutation claims for the selected patient in this same
-        # result batch, rather than displaying them in a separate UI section.
-        # The verifier receives each claim and ground-truth facts, never the mutation
-        # manifest, expected verdict, or mutation label.
-        case_record_map = {get_case_id(record): record for record in records}
-        mutation_results = run_additional_mutation_verification(
-            case_record_map, selected_case=selected_case
+        # One call: all claims go through the same retrieval, deterministic
+        # verification, and optional evidence-constrained Gemini fallback.
+        batch_results, semantic_status = verify_claims_batch(
+            combined_claims,
+            ground_truth_facts,
+            record=selected_record,
+            top_k=20,
+            progress_callback=update_verification_progress,
         )
-        for mutation_item in mutation_results:
-            batch_results.append(
-                {
-                    "claim": mutation_item.get("claim", {}),
-                    "candidates": mutation_item.get("candidates", []),
-                    "result": mutation_item.get("result"),
-                    "error": mutation_item.get("processing_error"),
-                    "source_type": "Controlled mutation test",
-                    "test_id": mutation_item.get("test_id", ""),
-                }
-            )
+
+        # Restore human-readable claim IDs and attach source metadata only after
+        # semantic adjudication has finished. Gemini never receives mutation
+        # labels, expected verdicts, test IDs, or the scoring manifest.
+        for index, item in enumerate(batch_results):
+            metadata = result_metadata[index]
+            claim_payload = item.get("claim") or {}
+            claim_payload["claim_id"] = metadata.get("display_claim_id", "")
+            item["claim"] = claim_payload
+            item["source_type"] = metadata.get("source_type", "Original discharge summary")
+            item["test_id"] = metadata.get("test_id", "")
+            item["display_claim_id"] = metadata.get("display_claim_id", "")
+            item["pipeline_claim_id"] = run_claim_ids[index]
+            result_payload = item.get("result")
+            if isinstance(result_payload, dict):
+                result_payload["claim_id"] = metadata.get("display_claim_id", "")
 
         progress.empty()
         st.session_state["summary_verification_results"] = batch_results
         st.session_state["summary_verification_results_key"] = verification_key
         st.session_state["summary_verification_semantic_status"] = semantic_status
         st.session_state["summary_verification_semantic_status_key"] = verification_key
-        st.session_state["summary_verification_summary_claim_count"] = len(claims)
-        st.session_state["summary_verification_mutation_count"] = len(mutation_results)
+        st.session_state["summary_verification_summary_claim_count"] = original_claim_count
+        st.session_state["summary_verification_mutation_count"] = mutation_claim_count
+        st.session_state["summary_verification_mutation_load_errors"] = preview_mutation_errors
         st.session_state["summary_verification_results_case_id"] = selected_case
         st.rerun()
 
-    # Display the most recent results only when they belong to this summary.
-    batch_results = st.session_state.get("summary_verification_results")
+    stored_batch_results = st.session_state.get("summary_verification_results")
     results_case_id = st.session_state.get("summary_verification_results_case_id")
-    if batch_results and saved_results_key == verification_key and results_case_id == selected_case:
+    if (
+        isinstance(stored_batch_results, list)
+        and saved_results_key == verification_key
+        and results_case_id == selected_case
+    ):
+        batch_results = stored_batch_results
         semantic_status = st.session_state.get("summary_verification_semantic_status", {})
         semantic_status_key = st.session_state.get("summary_verification_semantic_status_key")
+        mutation_load_errors = st.session_state.get(
+            "summary_verification_mutation_load_errors", []
+        )
+
         if semantic_status_key == verification_key and semantic_status.get("enabled"):
             if semantic_status.get("error"):
                 st.warning(
-                    "Optional Gemini semantic fallback did not run successfully "
-                    "(" + str(semantic_status["error"]) + "). Deterministic verification "
-                    "results were retained."
+                    "Gemini semantic adjudication did not complete ("
+                    + str(semantic_status["error"])
+                    + "). Deterministic verification results were retained."
                 )
-            elif semantic_status.get("applied", 0):
+            elif semantic_status.get("considered", 0):
+                accepted_count = int(
+                    semantic_status.get("accepted", semantic_status.get("applied", 0)) or 0
+                )
                 st.info(
-                    "Optional Gemini semantic fallback supported "
-                    + str(semantic_status.get("applied", 0))
-                    + " previously uncertain claim(s), using cited retrieved evidence. "
-                    "Deterministic contradictions were not overridden."
+                    "Gemini reviewed "
+                    + str(semantic_status.get("considered", 0))
+                    + " eligible claim(s). Accepted decisions: "
+                    + str(accepted_count)
+                    + " ("
+                    + str(semantic_status.get("supported", 0))
+                    + " SUPPORTED, "
+                    + str(semantic_status.get("contradicted", 0))
+                    + " CONTRADICTED, "
+                    + str(semantic_status.get("abstained", 0))
+                    + " INSUFFICIENT_EVIDENCE)."
                 )
                 if semantic_status.get("limit_reached"):
                     st.caption(
-                        "The configured semantic adjudication limit was reached; remaining "
-                        "uncertain claims keep their deterministic verdicts."
+                        "The configured Gemini review limit was reached; other eligible "
+                        "claims retain their deterministic results."
                     )
             else:
                 st.caption(
-                    "Optional Gemini semantic fallback ran but did not promote any claims; "
-                    "deterministic verdicts were retained."
+                    "No claims met the current rules for Gemini semantic adjudication; "
+                    "deterministic results were retained."
                 )
+
+        if mutation_load_errors:
+            st.warning(
+                f"{len(mutation_load_errors)} controlled mutation file(s) could not be loaded. "
+                "See the full report for details."
+            )
 
         valid_results = [item for item in batch_results if item.get("result") is not None]
         error_results = [item for item in batch_results if item.get("error")]
 
-        def item_verdict(item):
-            return str(item.get("result", {}).get("verdict", "UNKNOWN")).upper()
+        def item_verdict(item: dict) -> str:
+            return str((item.get("result") or {}).get("verdict", "UNKNOWN")).upper()
 
-        def item_verdict(item):
-            return str(item.get("result", {}).get("verdict", "UNKNOWN")).upper()
-
-        def make_result_row(item):
-            claim = item.get("claim", {})
+        def semantic_verdict_changed(item: dict) -> bool:
             result = item.get("result") or {}
-            value_parts = [
-                str(claim.get("value", "")).strip(),
-                str(claim.get("unit", "")).strip(),
-            ]
-            claim_value = " ".join(part for part in value_parts if part)
-            field_results = result.get("field_results") or {}
-            mismatches = []
-            for field_name, field_result in field_results.items():
-                if str(field_result.get("verdict", "")).upper() == "CONTRADICTED":
-                    claimed = field_result.get("claim_value", "")
-                    source = field_result.get("source_value", "")
-                    fact_id = field_result.get("matched_fact_id", "")
-                    mismatch = f"{field_name}: {claimed!s} → {source!s}"
-                    if fact_id:
-                        mismatch += f" [{fact_id}]"
-                    mismatches.append(mismatch)
+            adjudication = result.get("semantic_adjudication") or {}
+            if not adjudication.get("applied"):
+                return False
+            if "verdict_changed" in adjudication:
+                return bool(adjudication.get("verdict_changed"))
+            previous = adjudication.get("previous_verdict")
+            final = result.get("verdict")
+            return bool(
+                previous and final
+                and str(previous).upper() != str(final).upper()
+            )
 
+        def source_label(item: dict) -> str:
+            if item.get("source_type") == "Controlled mutation test":
+                return "Controlled mutation test"
+            return "Original discharge summary"
+
+        def make_result_row(item: dict) -> dict:
+            claim = item.get("claim") or {}
+            result = item.get("result") or {}
+            field_results = result.get("field_results") or {}
+            mismatches = mismatch_description(field_results)
+            claim_value = " ".join(
+                str(claim.get(key, "")).strip()
+                for key in ("value", "unit")
+                if str(claim.get(key, "")).strip()
+            )
             return {
-                "Source": item.get("source_type", "Discharge summary"),
-                "Mutation Test ID": item.get("test_id", ""),
-                "Claim ID": claim.get("claim_id", ""),
+                "Source": source_label(item),
+                "Test ID": item.get("test_id", ""),
+                "Claim ID": item.get("display_claim_id") or claim.get("claim_id", ""),
                 "Subject": claim.get("subject", ""),
+                "Final verdict": item_verdict(item),
+                "Review": "by Gemini" if semantic_verdict_changed(item) else "",
                 "Category": claim.get("category", ""),
                 "Relation": claim.get("relation", ""),
-                "Value": claim_value,
+                "Claimed value": claim_value,
                 "Route": claim.get("route", ""),
                 "Frequency": claim.get("frequency", ""),
-                "Discrepancy type": result.get("error_type") or "Field mismatch",
-                "Mismatch details": " | ".join(mismatches),
-                "Matched fact IDs": ", ".join(result.get("matched_fact_ids") or []),
-                "Source text": claim.get("source_text", ""),
-                "Processing error": item.get("error") or "",
+                "Discrepancy type": result.get("error_type") or "",
+                "Mismatch details": mismatches,
             }
 
+        original_count = sum(
+            item.get("source_type") != "Controlled mutation test" for item in batch_results
+        )
+        mutation_count = sum(
+            item.get("source_type") == "Controlled mutation test" for item in batch_results
+        )
         contradicted_items = [
             item for item in valid_results if item_verdict(item) == "CONTRADICTED"
         ]
-
-        st.subheader("Discrepancy Detection Results")
-        mutation_case_count = sum(
-            item.get("source_type") == "Controlled mutation test" for item in batch_results
+        review_items = [
+            item for item in valid_results
+            if item_verdict(item) in {"INSUFFICIENT_EVIDENCE", "PARTIALLY_SUPPORTED"}
+        ]
+        gemini_changed_to_supported = sum(
+            1 for item in valid_results
+            if semantic_verdict_changed(item) and item_verdict(item) == "SUPPORTED"
         )
-        summary_claim_count = sum(
-            item.get("source_type", "Discharge summary") == "Discharge summary"
-            for item in batch_results
-        )
-        summary_cols = st.columns(3)
-        with summary_cols[0]:
-            st.metric("Summary claims checked", summary_claim_count)
-        with summary_cols[2]:
-            st.metric("Potential discrepancies detected", len(contradicted_items))
 
-        
+        st.subheader("Unified Verification Results")
+        # Present the original-summary and controlled-mutation claims as one
+        # combined verification batch. Source provenance remains available on
+        # individual result rows and in the downloadable research report.
+        metric_cols = st.columns(2)
+        with metric_cols[0]:
+            st.metric("Total claims evaluated", len(batch_results))
+        with metric_cols[1]:
+            st.metric("Processing errors", len(error_results))
 
-        if error_results:
-            st.warning(
-                f"Verification could not be completed for {len(error_results)} claim(s). "
-                "Those claims are retained in the downloadable full verification report."
-            )
-
-        with st.expander("Discrepancy categories covered by the 90-case controlled test"):
+        if gemini_changed_to_supported:
             st.caption(
-                "These categories were detected in a controlled test of existing atomic claims. "
-                "This is a tested scope, not a guarantee that every real-world instance will be detected."
-            )
-            tested_categories = [
-                ("Medication dose mismatch", 12),
-                ("Medication route mismatch", 12),
-                ("Medication frequency mismatch", 12),
-                ("Multiple medication-field mismatch", 12),
-                ("Laboratory numeric-value mismatch", 12),
-                ("Unit mismatch", 12),
-                ("Wrong event date", 6),
-                ("Wrong laboratory timepoint/value", 7),
-                ("Narrative polarity or negation", 3),
-                ("Allergy polarity", 1),
-                ("Duration mismatch", 1),
-            ]
-            st.dataframe(
-                [
-                    {"Tested discrepancy category": category, "Controlled errors": count}
-                    for category, count in tested_categories
-                ],
-                use_container_width=True,
-                hide_index=True,
-            )
-            st.caption(
-                "The 90/90 result applies only to these constructed verification-stage cases. "
-                "The LLM claim extractor was not rerun for that experiment."
+                f"Gemini resolved {gemini_changed_to_supported} claim(s) as SUPPORTED. "
+                "They are omitted from the review lists; all outcomes remain in the downloadable report."
             )
 
+        # Doctors/reviewers see only claims that require attention. SUPPORTED
+        # claims are retained in the full JSON report for research analysis.
         st.subheader(f"Detected Discrepancies ({len(contradicted_items)})")
-        st.caption(
-            "Review the extracted claim alongside the matched source fact. These are "
-            "potential factual discrepancies identified by the verifier and should be "
-            "interpreted with their evidence, not as automatically confirmed clinical errors."
-        )
         if contradicted_items:
+            st.caption(
+                "These claims were classified as CONTRADICTED. The Source column "
+                "distinguishes original-summary claims from controlled experimental inputs."
+            )
             st.dataframe(
                 [make_result_row(item) for item in contradicted_items],
                 use_container_width=True,
                 hide_index=True,
             )
-            st.subheader("Discrepancy Evidence")
-            st.caption(
-                "Expand a discrepancy to inspect its source text, field-level comparison, "
-                "matched facts and retrieved candidates."
-            )
-            for item in contradicted_items:
-                claim = item.get("claim", {})
-                result = item.get("result") or {}
-                source_prefix = (
-                    f"{item.get('test_id')} · "
-                    if item.get("source_type") == "Controlled mutation test"
-                    else "Summary · "
-                )
-                claim_label = (
-                    f"{source_prefix}{claim.get('claim_id', 'Claim')} · "
-                    f"{claim.get('subject', 'Unspecified subject')} — "
-                    f"{result.get('error_type') or 'CONTRADICTED'}"
-                )
-                with st.expander(claim_label):
-                    st.write("**Source:**", item.get("source_type", "Discharge summary"))
-                    if item.get("test_id"):
-                        st.write("**Mutation Test ID:**", item.get("test_id"))
-                    st.write("**Claim ID:**", claim.get("claim_id", ""))
-                    st.write("**Category:**", claim.get("category", ""))
-                    st.write("**Relation:**", claim.get("relation", ""))
-                    st.write("**Claim value:**", claim.get("value", ""), claim.get("unit", ""))
-                    st.write("**Route:**", claim.get("route", ""))
-                    st.write("**Frequency:**", claim.get("frequency", ""))
-                    st.write("**Duration:**", claim.get("duration", ""))
-                    st.write("**Source text:**", claim.get("source_text", ""))
-                    st.write("**Discrepancy type:**", result.get("error_type") or "Field mismatch")
-                    if result.get("semantic_adjudication", {}).get("applied"):
-                        adjudication = result["semantic_adjudication"]
-                        st.caption(
-                            "Semantic fallback adjudicated the unresolved field "
-                            f"`{adjudication.get('unresolved_field', '')}` using "
-                            f"retrieved fact IDs: {', '.join(adjudication.get('supporting_fact_ids', []))}. "
-                            "Deterministic field checks remain visible below."
-                        )
-                    st.write(
-                        "**Matched fact IDs:**",
-                        ", ".join(result.get("matched_fact_ids") or []) or "None",
+            with st.expander("Inspect discrepancy evidence"):
+                for item in contradicted_items:
+                    claim = item.get("claim") or {}
+                    result = item.get("result") or {}
+                    title_prefix = (
+                        f"{item.get('test_id')} · "
+                        if item.get("test_id") else ""
                     )
-
-                    with st.expander("Field-by-field comparison"):
-                        field_results = result.get("field_results", {})
-                        if field_results:
-                            st.json(field_results)
-                        else:
-                            st.info("No field-level comparison was returned.")
-
-                    candidate_by_id = {
-                        candidate.get("fact", {}).get("fact_id"): candidate
-                        for candidate in item.get("candidates", [])
-                        if isinstance(candidate, dict)
-                        and isinstance(candidate.get("fact"), dict)
-                    }
-                    matched_fact_ids = result.get("matched_fact_ids") or []
-                    if matched_fact_ids:
-                        st.markdown("**Matched source evidence**")
-                        for fact_id in matched_fact_ids:
-                            candidate = candidate_by_id.get(fact_id, {})
-                            fact = candidate.get("fact", {})
-                            st.markdown(
-                                f"- **{fact.get('subject', 'Source fact')}** — "
-                                f"{fact.get('relation', 'relation not specified')}: "
-                                f"{fact.get('value', '')} {fact.get('unit', '')} "
-                                f"(Fact ID: `{fact_id}`, section: "
-                                f"`{fact.get('source_section', 'N/A')}`)"
-                            )
-
-                    with st.expander("Retrieved candidate evidence"):
-                        candidates = item.get("candidates", [])
-                        if candidates:
-                            candidate_rows = []
-                            for candidate in candidates:
-                                fact = candidate.get("fact", {})
-                                candidate_rows.append(
-                                    {
-                                        "Score": candidate.get("score", ""),
-                                        "Fact ID": fact.get("fact_id", ""),
-                                        "Subject": fact.get("subject", ""),
-                                        "Category": fact.get("category", ""),
-                                        "Relation": fact.get("relation", ""),
-                                        "Value": fact.get("value", ""),
-                                        "Unit": fact.get("unit", ""),
-                                        "Section": fact.get("source_section", ""),
-                                        "Match Reasons": ", ".join(
-                                            str(reason)
-                                            for reason in candidate.get("match_reasons", [])
-                                        ),
-                                    }
+                    label = (
+                        f"{title_prefix}{claim.get('claim_id', 'Claim')} · "
+                        f"{claim.get('subject', 'Unspecified subject')}"
+                    )
+                    with st.expander(label):
+                        st.write("**Source:**", source_label(item))
+                        if item.get("test_id"):
+                            st.write("**Test ID:**", item["test_id"])
+                        st.write("**Final verdict:**", "CONTRADICTED")
+                        if semantic_verdict_changed(item):
+                            st.caption("by Gemini")
+                        st.write("**Claim text:**", claim.get("source_text", "") or "Not available")
+                        st.write("**Category / relation:**", claim.get("category", ""), "/", claim.get("relation", ""))
+                        st.write("**Claimed value:**", claim.get("value", ""), claim.get("unit", ""))
+                        st.write("**Error type:**", result.get("error_type") or "Field mismatch")
+                        if result.get("semantic_adjudication", {}).get("applied"):
+                            rationale = result["semantic_adjudication"].get("rationale", "")
+                            if rationale:
+                                st.write("**Gemini-generated rationale:**", rationale)
+                        st.write(
+                            "**Matched fact IDs:**",
+                            ", ".join(result.get("matched_fact_ids") or []) or "None",
+                        )
+                        with st.expander("Field-by-field comparison"):
+                            st.json(result.get("field_results", {}))
+                        candidate_by_id = {
+                            candidate.get("fact", {}).get("fact_id"): candidate.get("fact", {})
+                            for candidate in item.get("candidates", [])
+                            if isinstance(candidate, dict)
+                            and isinstance(candidate.get("fact"), dict)
+                        }
+                        for fact_id in result.get("matched_fact_ids") or []:
+                            fact = candidate_by_id.get(fact_id, {})
+                            if fact:
+                                st.write(
+                                    f"{fact.get('subject', 'Source fact')} — "
+                                    f"{fact.get('relation', 'relation')}: "
+                                    f"{fact.get('value', '')} {fact.get('unit', '')} "
+                                    f"(Fact ID: {fact_id})"
                                 )
-                            st.dataframe(
-                                candidate_rows,
-                                use_container_width=True,
-                                hide_index=True,
-                            )
-                        else:
-                            st.info("No candidate facts were retrieved.")
         else:
             st.success("No claims were classified as contradicted in this run.")
 
-        # Export every claim verdict and its retrieved source candidates so that
-        # unexpected contradictions can be audited outside the UI.
+        st.subheader(f"Claims Requiring Further Review ({len(review_items)})")
+        if review_items:
+            st.caption(
+                "These claims could not be fully resolved from the available evidence. "
+                "They are not presented as confirmed contradictions."
+            )
+            st.dataframe(
+                [make_result_row(item) for item in review_items],
+                use_container_width=True,
+                hide_index=True,
+            )
+            with st.expander("Inspect claims requiring further review"):
+                for item in review_items:
+                    claim = item.get("claim") or {}
+                    result = item.get("result") or {}
+                    test_prefix = f"{item.get('test_id')} · " if item.get("test_id") else ""
+                    label = (
+                        f"{test_prefix}{claim.get('claim_id', 'Claim')} · "
+                        f"{claim.get('subject', 'Unspecified subject')} — {item_verdict(item)}"
+                    )
+                    with st.expander(label):
+                        st.write("**Source:**", source_label(item))
+                        st.write("**Final verdict:**", item_verdict(item))
+                        if semantic_verdict_changed(item):
+                            st.caption("by Gemini")
+                        st.write("**Claim text:**", claim.get("source_text", "") or "Not available")
+                        adjudication = result.get("semantic_adjudication") or {}
+                        if adjudication.get("rationale"):
+                            st.write("**Gemini-generated rationale:**", adjudication["rationale"])
+                        st.write("**Matched fact IDs:**", ", ".join(result.get("matched_fact_ids") or []) or "None")
+                        with st.expander("Field-by-field comparison"):
+                            st.json(result.get("field_results", {}))
+
+        if error_results:
+            st.warning(
+                f"Verification could not be completed for {len(error_results)} claim(s). "
+                "These claims are preserved in the full report and should not be treated as supported."
+            )
+
+        # Full research report intentionally retains SUPPORTED claims as well as
+        # review-needed outcomes. The UI above hides SUPPORTED claims to reduce
+        # reviewer workload, but the data remains available for metrics/auditing.
         report_payload = {
             "case_id": selected_case,
-            "summary_file": selected_summary_file.name,
-            "summary_claims_checked": summary_claim_count,
-            "mutation_cases_checked": mutation_case_count,
-            "total_checks": len(batch_results),
+            "original_summary_file": selected_summary_file.name,
+            "evaluation_scope": "one_unified_batch_original_summary_plus_preextracted_controlled_mutations",
+            "original_summary_claims_checked": original_count,
+            "controlled_mutation_claims_checked": mutation_count,
+            "total_claims_checked": len(batch_results),
             "contradicted_count": len(contradicted_items),
+            "needs_review_count": len(review_items),
+            "processing_error_count": len(error_results),
+            "gemini_changed_to_supported_count": gemini_changed_to_supported,
+            "semantic_adjudication_status": semantic_status,
+            "mutation_input_load_errors": mutation_load_errors,
             "results": [
                 {
-                    "source_type": item.get("source_type", "Discharge summary"),
+                    "source_type": source_label(item),
                     "test_id": item.get("test_id", ""),
                     "claim": item.get("claim", {}),
                     "verdict_result": item.get("result"),
@@ -1104,18 +1086,24 @@ else:
             ],
         }
         st.download_button(
-            "Download Full Verification Report (JSON)",
+            "Download Full Unified Verification Report (JSON)",
             data=json.dumps(report_payload, indent=2, ensure_ascii=False),
-            file_name=f"{selected_summary_file.stem}_verification_report.json",
+            file_name=f"{selected_summary_file.stem}_unified_verification_report.json",
             mime="application/json",
-            key=f"download_verification_report::{selected_summary_file.stem}",
+            key=f"download_unified_verification_report::{selected_summary_file.stem}",
         )
     else:
         st.info(
-            "Click **Verify Entire Discharge Summary** to evaluate the selected summary's "
-            "saved claims and this patient's controlled mutation claims together. Only "
-            "contradicted results will be displayed below."
+            "Click **Verify All Claims** to run the original summary claims and the "
+            "selected patient's available controlled mutation claims through one shared pipeline."
         )
 
 st.divider()
 
+st.caption(
+    "Research note: the existing controlled mutation set modifies already-extracted "
+    "claims. It tests retrieval, deterministic comparison, and semantic adjudication, "
+    "but does not test whether the LLM extractor can detect errors introduced into "
+    "the complete discharge-summary text. A separate document-level mutation study "
+    "should inject errors into copies of the summaries and rerun claim extraction."
+)
