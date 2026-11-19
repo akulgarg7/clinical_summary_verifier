@@ -326,6 +326,110 @@ def _looks_like_schedule(value):
         text,
     ))
 
+def _is_explicit_frequency_schedule(value):
+    """Return True only for frequency strings with an unambiguous parsed cadence.
+
+    This is intentionally stricter than ``_looks_like_schedule``. A phrase can
+    clearly describe a schedule without being normalized into a canonical
+    cadence; those are the cases that may benefit from semantic adjudication.
+    """
+    text = _canonical_frequency(value)
+    if not text:
+        return False
+
+    canonical_values = {
+        "once daily",
+        "twice daily",
+        "three times daily",
+        "four times daily",
+        "five times daily",
+        "six times daily",
+        "thrice daily",
+        "once",
+        "once only",
+        "single dose",
+        "as needed",
+    }
+    if text in canonical_values:
+        return True
+
+    return bool(
+        re.fullmatch(r"every \d+ (?:seconds?|minutes?|hours?|days?)", text)
+        or re.fullmatch(r"\d+ times daily", text)
+    )
+
+
+def _frequency_representation(value):
+    """Classify a parsed schedule as daily-count, interval, conditional, or unknown."""
+    text = _canonical_frequency(value)
+    if text in {
+        "once daily", "twice daily", "three times daily", "four times daily",
+        "five times daily", "six times daily", "thrice daily",
+    } or re.fullmatch(r"\d+ times daily", text):
+        return "daily_count"
+    if re.fullmatch(r"every \d+ (?:seconds?|minutes?|hours?|days?)", text):
+        return "interval"
+    if text == "as needed":
+        return "conditional"
+    if text in {"once", "once only", "single dose"}:
+        return "single_administration"
+    return None
+
+
+def _semantic_review_candidate(field, claim_value, fact, verdict):
+    """Identify low-risk textual mismatches that warrant a semantic second look.
+
+    Clear structured contradictions (especially numeric values, routes, and
+    explicit, different medication schedules) are deliberately excluded.
+    """
+    if not isinstance(fact, dict):
+        return False
+
+    source_value = fact.get("value", "")
+    if not str(claim_value or "").strip() or not str(source_value or "").strip():
+        return False
+
+    if field == "frequency":
+        claim_frequency = _canonical_frequency(claim_value)
+        source_frequency = _canonical_frequency(source_value)
+        claim_form = _frequency_representation(claim_value)
+        source_form = _frequency_representation(source_value)
+        if (
+            _looks_like_schedule(claim_frequency)
+            and _looks_like_schedule(source_frequency)
+            and (
+                not (
+                    _is_explicit_frequency_schedule(claim_value)
+                    and _is_explicit_frequency_schedule(source_value)
+                )
+                or claim_form is None
+                or source_form is None
+                or claim_form != source_form
+            )
+        ):
+            return verdict in {"CONTRADICTED", "INSUFFICIENT_EVIDENCE"}
+
+    # Narrative fields can be semantically equivalent despite different words.
+    # Do not use the LLM to reinterpret high-risk structured fields or numeric
+    # disagreements; those remain governed by deterministic comparison.
+    if verdict != "INSUFFICIENT_EVIDENCE":
+        return False
+
+    structured_fields = {
+        "dose", "route", "status", "duration", "date", "time",
+        "performed on", "age", "height", "weight", "sex", "gender",
+        "blood group", "result value", "baseline value",
+    }
+    if normalize(field).replace("_", " ") in structured_fields:
+        return False
+
+    claim_text = normalize(claim_value)
+    source_text = normalize(source_value)
+    if _numeric_tokens(claim_text) or _numeric_tokens(source_text):
+        return False
+    return bool(re.search(r"[a-z]", claim_text) and re.search(r"[a-z]", source_text))
+
+
 def _contains_negation(text):
     """Detect explicit clinical negation/exclusion language in a value."""
     text = normalize(text)
@@ -1756,6 +1860,9 @@ def verify_claim_against_facts(
             "ambiguous_evidence": ambiguous,
             "matched_relation": selected.get("relation") if selected else None,
             "matched_fact_ids": selected.get("supporting_fact_ids", []) if selected else [],
+            "semantic_review_candidate": _semantic_review_candidate(
+                field, check["claim_value"], fact, verdict
+            ),
         }
 
     verdicts = [
